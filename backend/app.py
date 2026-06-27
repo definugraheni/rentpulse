@@ -21,9 +21,10 @@ def root():
 
 @app.get("/api/scrape")
 def scrape(slug: str):
-    units = scrape_area(slug)
+    units, filter_info = scrape_area(slug)
 
     return {
         "label": slug.replace("-", " ").title(),
-        "units": units
+        "units": units,
+        "filter_info": filter_info
     }

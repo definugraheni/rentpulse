@@ -276,6 +276,13 @@ def scrape_area(slug: str, max_pages: int = 3):
 
             units = parse_listings(html, debug=(page_num == 1))
             print(f"[diag] page {page_num}: parsed {len(units)} unit(s) before filtering", file=sys.stderr)
+            if len(units) == 0:
+                detail_link_count = html.count('href="/details/') + html.count('href="https://speedhome.com/details/')
+                has_title_class = "propertyTitle" in html
+                has_price_class = "propertyPrice" in html
+                print(f"[diag] 0 units found -- raw checks: detail_link_count={detail_link_count} "
+                      f"has_propertyTitle_class={has_title_class} has_propertyPrice_class={has_price_class}", file=sys.stderr)
+                print(f"[diag] html snippet (first 800 chars): {html[:800]!r}", file=sys.stderr)
             new_units = [u for u in units if u["url_slug"] not in seen_slugs]
             if not new_units:
                 break
@@ -285,11 +292,9 @@ def scrape_area(slug: str, max_pages: int = 3):
             time.sleep(DELAY_SECONDS)
         browser.close()
 
-    filtered = filter_by_area_name(all_units, slug)
-    dropped = len(all_units) - len(filtered)
-    if dropped:
-        print(f"[filter] dropped {dropped} listing(s) not matching area name for slug={slug!r}", file=sys.stderr)
-    return filtered
+    filtered, filter_info = filter_by_geo_radius(all_units, slug)
+    print(f"[filter] {filter_info}", file=sys.stderr)
+    return filtered, filter_info
 
 
 if __name__ == "__main__":
