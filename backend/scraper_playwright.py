@@ -154,52 +154,128 @@ def _haversine_km(lat1, lng1, lat2, lng2):
     return 2 * R * asin(sqrt(a))
 
 
-def filter_by_geo_cluster(units, max_radius_km: float = 12.0):
-    """
-    Automatically drop listings whose true coordinates (from the embedded
-    map) are far outside the main geographic cluster of results -- handles
-    SPEEDHOME pages (like /rent/jalan-ipoh) that mix in loosely-related
-    areas, WITHOUT needing any manual area-name list.
-    """
-    geo_units = [u for u in units if u.get("lat") is not None]
-    if len(geo_units) < 3:
-        return units  # not enough geo data to cluster meaningfully -- keep all
+_geocode_cache: dict = {}
 
-    lats = sorted(u["lat"] for u in geo_units)
-    lngs = sorted(u["lng"] for u in geo_units)
-    n = len(lats)
-    median_lat = lats[n // 2]
-    median_lng = lngs[n // 2]
+
+def geocode_area(name: str):
+    """
+    Look up the real-world coordinates of the searched area name using
+    OpenStreetMap's free Nominatim geocoder (no API key needed, fully
+    automatic -- no manual area/coordinate list to maintain).
+    Returns (lat, lng) or None if not found / request failed.
+    """
+    if name in _geocode_cache:
+        return _geocode_cache[name]
+    try:
+        import urllib.request
+        import urllib.parse
+        query = urllib.parse.quote(f"{name}, Malaysia")
+        url = f"https://nominatim.openstreetmap.org/search?q={query}&format=json&limit=1"
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "RentPulse-PriceIntelligence/1.0 (contact: you@example.com)"
+        })
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            results = json.loads(resp.read().decode("utf-8"))
+        if results:
+            coords = (float(results[0]["lat"]), float(results[0]["lon"]))
+            _geocode_cache[name] = coords
+            time.sleep(1.0)  # respect Nominatim's 1 req/sec usage policy
+            return coords
+    except Exception as e:
+        print(f"[geocode] failed for {name!r}: {e}", file=sys.stderr)
+    _geocode_cache[name] = None
+    return None
+
+
+def filter_by_geo_radius(units, slug: str, max_radius_km: float = 6.0):
+    """
+    Keep only listings whose true coordinates (read from each card's
+    embedded Google Static Map) fall within max_radius_km of the searched
+    area's REAL geocoded location. Returns (filtered_units, filter_info)
+    where filter_info documents exactly what was done -- so the UI can be
+    fully transparent about this step rather than silently filtering.
+    """
+    area_name = slug.replace("-", " ").title()
+    target = geocode_area(area_name)
+
+    filter_info = {
+        "method": "geo_radius",
+        "area_name": area_name,
+        "radius_km": max_radius_km,
+        "target_lat": None,
+        "target_lng": None,
+        "geocode_succeeded": target is not None,
+        "total_before": len(units),
+        "total_after": None,
+        "dropped_no_coords": 0,
+        "dropped_out_of_radius": 0,
+    }
+
+    if target is None:
+        # Geocoding failed -- fall back to median-of-results clustering
+        # so the app still returns something, but flag it clearly.
+        geo_units = [u for u in units if u.get("lat") is not None]
+        if len(geo_units) >= 3:
+            lats = sorted(u["lat"] for u in geo_units)
+            lngs = sorted(u["lng"] for u in geo_units)
+            n = len(lats)
+            target = (lats[n // 2], lngs[n // 2])
+            filter_info["method"] = "geo_radius_fallback_median"
+        else:
+            filter_info["method"] = "none_insufficient_data"
+            filter_info["total_after"] = len(units)
+            return units, filter_info
+
+    target_lat, target_lng = target
+    filter_info["target_lat"] = target_lat
+    filter_info["target_lng"] = target_lng
 
     kept = []
     for u in units:
         if u.get("lat") is None:
-            kept.append(u)  # no coords to judge -- keep, don't punish missing data
+            filter_info["dropped_no_coords"] += 1
             continue
-        dist = _haversine_km(u["lat"], u["lng"], median_lat, median_lng)
+        dist = _haversine_km(u["lat"], u["lng"], target_lat, target_lng)
         if dist <= max_radius_km:
             kept.append(u)
-    return kept
+        else:
+            filter_info["dropped_out_of_radius"] += 1
 
-
-def text_fallback_title(a):
-    """Last-resort title if the propertyTitle <h3> isn't found for some card."""
-    img = a.find("img", alt=lambda v: v and "Property Image" in v)
-    if img:
-        m = re.search(r"Property Image\s*\d+\s*-\s*(.+)", img["alt"])
-        if m:
-            return m.group(1).strip()
-    return "Untitled listing"
+    filter_info["total_after"] = len(kept)
+    return kept, filter_info
 
 def scrape_area(slug: str, max_pages: int = 3):
     all_units = []
     seen_slugs = set()
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page(user_agent=UA)
+        # Headless Chromium inside a Docker container (Railway, Render, etc.)
+        # needs these flags -- without them it can silently fail to render
+        # JS-heavy pages (like SPEEDHOME's Cloudflare-protected page) even
+        # though the exact same code works fine on a local Windows/Mac machine.
+        browser = p.chromium.launch(
+            headless=True,
+            args=[
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+                "--disable-gpu",
+                "--disable-setuid-sandbox",
+            ],
+        )
+        page = browser.new_page(user_agent=UA, viewport={"width": 1366, "height": 900})
         for page_num in range(1, max_pages + 1):
             html = fetch_rendered_html(page, slug, page_num)
+
+            # Diagnostics: tell us exactly what the container actually
+            # received, so we can distinguish "Cloudflare blocked us" from
+            # "page loaded but parsing found nothing".
+            title_m = re.search(r"<title>([^<]+)</title>", html, re.I)
+            page_title = title_m.group(1) if title_m else "(no <title>)"
+            print(f"[diag] page {page_num}: html_length={len(html)} title={page_title!r}", file=sys.stderr)
+            if "just a moment" in html.lower() or "checking your browser" in html.lower():
+                print("[diag] Cloudflare challenge page detected -- NOT the real listing page", file=sys.stderr)
+
             units = parse_listings(html, debug=(page_num == 1))
+            print(f"[diag] page {page_num}: parsed {len(units)} unit(s) before filtering", file=sys.stderr)
             new_units = [u for u in units if u["url_slug"] not in seen_slugs]
             if not new_units:
                 break
@@ -209,10 +285,10 @@ def scrape_area(slug: str, max_pages: int = 3):
             time.sleep(DELAY_SECONDS)
         browser.close()
 
-    filtered = filter_by_geo_cluster(all_units)
+    filtered = filter_by_area_name(all_units, slug)
     dropped = len(all_units) - len(filtered)
     if dropped:
-        print(f"[filter] dropped {dropped} listing(s) geographically far from the main cluster for slug={slug!r}", file=sys.stderr)
+        print(f"[filter] dropped {dropped} listing(s) not matching area name for slug={slug!r}", file=sys.stderr)
     return filtered
 
 
