@@ -24,7 +24,9 @@ def scrape(slug: str):
     units, filter_info = scrape_area(slug)
 
     return {
+        "slug": slug,
         "label": slug.replace("-", " ").title(),
+        "source_url": f"https://speedhome.com/rent/{slug}",
         "units": units,
         "filter_info": filter_info
     }
