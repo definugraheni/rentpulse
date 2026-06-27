@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentPulse — SPEEDHOME Price Intelligence</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f6f8f2;
+            --surface: #FFFFFF;
+            --surface2: #EEF1F6;
+            --line: #E2E7EF;
+            --line2: #CDD4E0;
+            --text: #1C2333;
+            --muted: #566078;
+            --faint: #9BA8BF;
+            --green: #1B7F4A;
+            --green-d: #145C36;
+            --green-bg: #EAF5EF;
+            --green-mid: #C4E8D4;
+            --amber: #A85A00;
+            --amber-bg: #FEF3E6;
+            --amber-mid: #FCDDB3;
+            --blue: #1C5FAD;
+            --blue-bg: #EBF2FC;
+            --sans: 'Poppins', system-ui, sans-serif;
+            --mono: 'JetBrains Mono', ui-monospace, monospace;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            font-size: 14px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrap {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 20px 80px;
+        }
+
+        /* ── MASTHEAD ─────────────────────────────────── */
+        .masthead {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 26px 0 22px;
+            border-bottom: 1.5px solid var(--line);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            background: var(--green);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 2px 8px rgba(27, 127, 74, 0.25);
+        }
+
+        .brand-name {
+            font-size: 35px;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -0.02em;
+            line-height: 1;
+        }
+
+        .brand-name em {
+            font-style: normal;
+            color: var(--green);
+        }
+
+        .brand-sub {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--faint);
+            letter-spacing: 0.04em;
+            margin-top: 3px;
+            text-transform: uppercase;
+        }
+
+        .masthead-right {
+            text-align: right;
+        }
+
+        .meta-date {
+            font-family: var(--mono);
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .meta-notice {
+            font-size: 14px;
+            color: var(--faint);
+            margin-top: 2px;
+        }
+
+        /* ── SEARCH PANEL ─────────────────────────────── */
+        .search-panel {
+            background: var(--surface);
+            border: 1.5px solid var(--line);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 28px 0;
+            position: relative;
+            border-radius: 16px 16px 0 0
+        }
+
+        .search-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--green) 0%, #5BC28A 50%, #A8DFC0 100%);
+        }
+
+        .panel-eyebrow {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 6px;
+        }
+
+        .panel-title {
+            font-size: 21px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .panel-hint {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 22px;
+            max-width: 560px;
+        }
+
+        .search-row {
+            display: flex;
+            gap: 10px;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        .search-input-wrap {
+            flex: 1;
+            min-width: 260px;
+            position: relative;
+        }
+
+        #queryInput {
+            width: 100%;
+            padding: 13px 16px;
+            font-size: 14px;
+            font-family: var(--sans);
+            font-weight: 500;
+            background: var(--bg);
+            border: 1.5px solid var(--line2);
+            border-radius: 10px;
+            color: var(--text);
+            outline: none;
+            transition: border-color 0.15s, box-shadow 0.15s;
+        }
+
+        #queryInput::placeholder {
+            color: var(--faint);
+            font-weight: 400;
+        }
+
+        #queryInput:focus {
+            border-color: var(--green);
+            box-shadow: 0 0 0 3px rgba(27, 127, 74, 0.10);
+        }
+
+        .suggestions {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 0;
+            right: 0;
+            background: var(--surface);
+            border: 1.5px solid var(--line2);
+            border-radius: 10px;
+            max-height: 260px;
+            overflow-y: auto;
+            z-index: 50;
+            display: none;
+            box-shadow: 0 8px 24px rgba(28, 35, 51, 0.12);
+        }
+
+        .suggestions div {
+            padding: 10px 16px;
+            font-size: 13.5px;
+            cursor: pointer;
+            border-bottom: 1px solid var(--line);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.1s;
+        }
+
+        .suggestions div:last-child {
+            border-bottom: none;
+        }
+
+        .suggestions div:hover,
+        .suggestions div.active {
+            background: var(--green-bg);
+            color: var(--green-d);
+        }
+
+        .suggestions small {
+            font-size: 11px;
+            color: var(--faint);
+        }
+
+        .suggestions div:hover small,
+        .suggestions div.active small {
+            color: var(--green);
+        }
+
+        #goBtn {
+            padding: 13px 28px;
+            font-size: 13.5px;
+            font-family: var(--sans);
+            font-weight: 600;
+            background: var(--green);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.15s, transform 0.1s;
+            box-shadow: 0 2px 8px rgba(27, 127, 74, 0.25);
+            white-space: nowrap;
+        }
+
+        #goBtn:hover {
+            background: var(--green-d);
+        }
+
+        #goBtn:active {
+            transform: scale(0.98);
+        }
+
+        #goBtn:disabled {
+            opacity: 0.45;
+            cursor: wait;
+        }
+
+        .status-line {
+            margin-top: 14px;
+            font-size: 12.5px;
+            color: var(--muted);
+            min-height: 18px;
+            line-height: 1.7;
+        }
+
+        .status-line a {
+            color: var(--green);
+            text-underline-offset: 3px;
+        }
+
+        .status-line code {
+            font-family: var(--mono);
+            font-size: 11.5px;
+            background: var(--surface2);
+            padding: 1px 5px;
+            border-radius: 4px;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 2px solid var(--green);
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* ── SECTION HEADER ───────────────────────────── */
+        .sec-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 42px 0 18px;
+        }
+
+        .sec-num {
+            font-family: var(--mono);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--green);
+            background: var(--green-bg);
+            border: 1px solid var(--green-mid);
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+
+        .sec-header h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .sec-rule {
+            flex: 1;
+            height: 1.5px;
+            background: var(--line);
+        }
+
+        /* ── STAT CARDS ───────────────────────────────── */
+        #summaryTable {
+            display: none;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 12px;
+        }
+
+        .stat-card {
+            background: var(--surface);
+            border: 1.5px solid var(--line);
+            border-radius: 14px;
+            padding: 18px 20px;
+            transition: border-color 0.15s, box-shadow 0.15s;
+        }
+
+        .stat-card:hover {
+            border-color: var(--green-mid);
+            box-shadow: 0 4px 16px rgba(27, 127, 74, 0.08);
+        }
+
+        .stat-card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .stat-type {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--green);
+            letter-spacing: 0.04em;
+        }
+
+        .stat-count {
+            font-family: var(--mono);
+            font-size: 10.5px;
+            color: var(--faint);
+            background: var(--surface2);
+            padding: 2px 7px;
+            border-radius: 4px;
+        }
+
+        .stat-price {
+            font-family: var(--mono);
+            font-size: 26px;
+            font-weight: 600;
+            color: var(--amber);
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .stat-price .currency {
+            font-size: 13px;
+            font-weight: 400;
+            color: var(--faint);
+            margin-right: 2px;
+        }
+
+        .stat-rows {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            border-top: 1px solid var(--line);
+            padding-top: 10px;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .stat-row-label {
+            color: var(--muted);
+        }
+
+        .stat-row-val {
+            font-family: var(--mono);
+            font-size: 12px;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .fair-tag {
+            font-family: var(--mono);
+            font-size: 11px;
+            background: var(--green-bg);
+            color: var(--green-d);
+            border: 1px solid var(--green-mid);
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* ── COVERAGE ─────────────────────────────────── */
+        .coverage {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .cov-pill {
+            font-size: 12px;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 20px;
+            border: 1.5px solid var(--line);
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            background: var(--surface);
+        }
+
+        .cov-pill.ok {
+            border-color: var(--green-mid);
+            color: var(--green-d);
+            background: var(--green-bg);
+        }
+
+        .cov-pill.no {
+            color: var(--faint);
+        }
+
+        .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .cov-pill.ok .dot {
+            background: var(--green);
+        }
+
+        .cov-pill.no .dot {
+            background: var(--faint);
+        }
+
+        /* ── INSIGHTS ─────────────────────────────────── */
+        .insights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+            gap: 12px;
+        }
+
+        .insight-card {
+            background: var(--surface);
+            border: 1.5px solid var(--line);
+            border-radius: 14px;
+            padding: 16px 18px;
+            transition: border-color 0.15s;
+        }
+
+        .insight-card:hover {
+            border-color: var(--line2);
+        }
+
+        .insight-k {
+            font-size: 10.5px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-bottom: 8px;
+        }
+
+        .insight-v {
+            font-family: var(--mono);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1;
+        }
+
+        .insight-v small {
+            font-family: var(--sans);
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--muted);
+            display: block;
+            margin-top: 4px;
+        }
+
+        /* ── CONTROLS ─────────────────────────────────── */
+        .controls {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .controls select,
+        .controls input[type=text] {
+            font-family: var(--sans);
+            font-size: 13px;
+            font-weight: 500;
+            padding: 9px 12px;
+            background: var(--surface);
+            border: 1.5px solid var(--line2);
+            border-radius: 8px;
+            color: var(--text);
+            outline: none;
+            transition: border-color 0.15s;
+        }
+
+        .controls select:focus,
+        .controls input[type=text]:focus {
+            border-color: var(--green);
+        }
+
+        .controls input[type=text]::placeholder {
+            color: var(--faint);
+            font-weight: 400;
+        }
+
+        .count-chip {
+            font-size: 12px;
+            color: var(--faint);
+            margin-left: auto;
+        }
+
+        .dl-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 14px;
+        }
+
+        .dl-btn {
+            font-family: var(--sans);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            padding: 9px 18px;
+            border-radius: 8px;
+            border: 1.5px solid;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .dl-btn.primary {
+            background: var(--amber-bg);
+            color: var(--amber);
+            border-color: var(--amber-mid);
+        }
+
+        .dl-btn.primary:hover {
+            background: var(--amber-mid);
+        }
+
+        .dl-btn.secondary {
+            background: var(--green-bg);
+            color: var(--green-d);
+            border-color: var(--green-mid);
+        }
+
+        .dl-btn.secondary:hover {
+            background: var(--green-mid);
+        }
+
+        /* ── TABLE ────────────────────────────────────── */
+        .table-wrap {
+            overflow-x: auto;
+            border: 1.5px solid var(--line);
+            border-radius: 12px;
+            background: var(--surface);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            min-width: 760px;
+        }
+
+        thead th {
+            background: var(--surface2);
+            color: var(--muted);
+            text-align: left;
+            padding: 11px 14px;
+            font-size: 10.5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            white-space: nowrap;
+            border-bottom: 1.5px solid var(--line);
+        }
+
+        tbody td {
+            padding: 11px 14px;
+            border-bottom: 1px solid var(--line);
+            white-space: nowrap;
+            color: var(--text);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:hover td {
+            background: var(--green-bg);
+        }
+
+        .seg-tag {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 9px;
+            border-radius: 5px;
+            background: var(--blue-bg);
+            color: var(--blue);
+            display: inline-block;
+        }
+
+        .price-rm {
+            font-family: var(--mono);
+            color: var(--amber);
+            font-weight: 600;
+        }
+
+        .title-cell {
+            max-width: 220px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        .badge-unfurn {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: var(--surface2);
+            color: var(--faint);
+            border: 1px solid var(--line);
+            display: inline-block;
+        }
+
+        #listingsTable td a {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--green);
+            text-decoration: none;
+            transition: color 0.1s;
+        }
+
+        #listingsTable td a:hover {
+            color: var(--green-d);
+            text-decoration: underline;
+        }
+
+        /* ── HISTOGRAM ────────────────────────────────── */
+        .chart-card {
+            background: var(--surface);
+            border: 1.5px solid var(--line);
+            border-radius: 14px;
+            padding: 24px;
+        }
+
+        .bar-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 7px 0;
+        }
+
+        .bar-label {
+            width: 120px;
+            flex-shrink: 0;
+            font-family: var(--mono);
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .bar-track {
+            flex: 1;
+            background: var(--surface2);
+            height: 16px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, var(--green) 0%, #5BC28A 100%);
+        }
+
+        .bar-val {
+            width: 56px;
+            text-align: right;
+            flex-shrink: 0;
+            font-family: var(--mono);
+            font-size: 11px;
+            color: var(--faint);
+        }
+
+        /* ── ROI ──────────────────────────────────────── */
+        .roi-card {
+            background: var(--surface);
+            border: 1.5px solid var(--line);
+            border-radius: 14px;
+            padding: 24px;
+        }
+
+        .roi-fields {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            margin-bottom: 18px;
+        }
+
+        .roi-field label {
+            display: block;
+            font-size: 10.5px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-bottom: 6px;
+        }
+
+        .roi-field input {
+            font-family: var(--mono);
+            font-size: 14px;
+            padding: 10px 12px;
+            background: var(--bg);
+            border: 1.5px solid var(--line2);
+            border-radius: 8px;
+            color: var(--text);
+            width: 170px;
+            outline: none;
+            transition: border-color 0.15s;
+        }
+
+        .roi-field input:focus {
+            border-color: var(--green);
+        }
+
+        .roi-result {
+            font-family: var(--mono);
+            font-size: 13.5px;
+            background: var(--green-bg);
+            color: var(--green-d);
+            border: 1.5px solid var(--green-mid);
+            padding: 14px 18px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        /* ── EMPTY STATE ──────────────────────────────── */
+        .empty-state {
+            text-align: center;
+            padding: 80px 20px;
+            border: 1.5px dashed var(--line2);
+            border-radius: 16px;
+            background: var(--surface);
+            margin-top: 12px;
+        }
+
+        .empty-icon {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 16px;
+            background: var(--green-bg);
+            border: 1.5px solid var(--green-mid);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .empty-state h3 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .empty-state p {
+            font-size: 13px;
+            color: var(--faint);
+        }
+
+        /* ── FOOTER ───────────────────────────────────── */
+        footer {
+            margin-top: 64px;
+            background: var(--surface);
+            border: 1.5px solid var(--line);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0;
+        }
+
+        .footer-col {
+            padding: 24px 26px;
+            border-right: 1px solid var(--line);
+        }
+
+        .footer-col:last-child {
+            border-right: none;
+        }
+
+        .footer-col-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            flex-shrink: 0;
+        }
+
+        .footer-col-icon.green {
+            background: var(--green-bg);
+        }
+
+        .footer-col-icon.amber {
+            background: var(--amber-bg);
+        }
+
+        .footer-col-icon.blue {
+            background: var(--blue-bg);
+        }
+
+        .footer-col h4 {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 5px;
+            letter-spacing: 0.01em;
+        }
+
+        .footer-col p {
+            font-size: 11.5px;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .footer-col p strong {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .footer-bottom {
+            background: var(--surface2);
+            border-top: 1px solid var(--line);
+            padding: 14px 26px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .footer-bottom-left {
+            font-size: 11.5px;
+            color: var(--faint);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-badge {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .footer-badge.ok {
+            background: var(--green-bg);
+            color: var(--green-d);
+        }
+
+        .footer-badge.warn {
+            background: var(--amber-bg);
+            color: var(--amber);
+        }
+
+        .footer-bottom-right {
+            font-family: var(--mono);
+            font-size: 11px;
+            color: var(--faint);
+        }
+
+        /* ── RESPONSIVE ───────────────────────────────── */
+        @media (max-width: 640px) {
+            .search-panel {
+                padding: 22px 18px;
+            }
+
+            .masthead-right {
+                display: none;
+            }
+
+            .brand-name {
+                font-size: 20px;
+            }
+
+            .roi-field input {
+                width: 100%;
+            }
+
+            .roi-fields {
+                flex-direction: column;
+            }
+
+            .sec-header h2 {
+                font-size: 16px;
+            }
+
+            .stat-price {
+                font-size: 22px;
+            }
+
+            #goBtn {
+                width: 100%;
+            }
+
+            .search-input-wrap {
+                min-width: 100%;
+            }
+
+            .footer-col {
+                border-right: none;
+                border-bottom: 1px solid var(--line);
+            }
+
+            .footer-col:last-child {
+                border-bottom: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .spinner {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <!-- MASTHEAD -->
+        <div class="masthead">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M3 14 L8 8 L12 11 L17 5" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <circle cx="17" cy="5" r="2.5" fill="#fff" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="brand-name">Rent<em>Pulse</em></div>
+                    <div class="brand-sub">SPEEDHOME Price Intelligence · Malaysia</div>
+                </div>
+            </div>
+            <div class="masthead-right">
+                <div class="meta-date" id="dateStamp">—</div>
+                <div class="meta-notice">Data publik · robots.txt-compliant · live scraping</div>
+            </div>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search-panel">
+            <div class="panel-eyebrow">01 — Cari Area</div>
+            <h1 class="panel-title">Temukan harga sewa di area mana saja</h1>
+            <p class="panel-hint">Ketik nama area (contoh: "Mont Kiara", "TTDI") untuk saran otomatis, atau tempel URL
+                SPEEDHOME langsung. Data ditarik secara live lewat API scraper.</p>
+            <div class="search-row">
+                <div class="search-input-wrap">
+                    <input type="text" id="queryInput" placeholder="Mont Kiara, TTDI, Bangsar, Cyberjaya..."
+                        autocomplete="off">
+                    <div class="suggestions" id="suggestions"></div>
+                </div>
+                <button id="goBtn">Tarik Data →</button>
+            </div>
+            <div class="status-line" id="statusLine">Masukkan nama area atau URL SPEEDHOME, lalu klik "Tarik Data".
+            </div>
+        </div>
+
+        <!-- RESULTS -->
+        <div id="resultsArea" style="display:none;">
+
+            <div class="sec-header">
+                <span class="sec-num">02</span>
+                <h2>Harga per Tipe Unit</h2>
+                <div class="sec-rule"></div>
+            </div>
+            <div class="stat-grid" id="statGrid"></div>
+            <table id="summaryTable" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Tipe Unit</th>
+                        <th># Unit</th>
+                        <th>Avg</th>
+                        <th>Median</th>
+                        <th>Modus</th>
+                        <th>Fair Price</th>
+                        <th>Avg Sqft</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="sec-header">
+                <span class="sec-num">03</span>
+                <h2>Cakupan Tipe Sewa</h2>
+                <div class="sec-rule"></div>
+            </div>
+            <div class="coverage" id="coverageStrip"></div>
+
+            <div class="sec-header">
+                <span class="sec-num">04</span>
+                <h2>Insight Otomatis</h2>
+                <div class="sec-rule"></div>
+            </div>
+            <div class="insights" id="insightCards"></div>
+
+            <div class="sec-header">
+                <span class="sec-num">05</span>
+                <h2>Daftar Unit Lengkap</h2>
+                <div class="sec-rule"></div>
+            </div>
+            <div class="controls">
+                <select id="filterSeg">
+                    <option value="all">Semua tipe</option>
+                </select>
+                <select id="sortBy">
+                    <option value="price-asc">Harga: Rendah → Tinggi</option>
+                    <option value="price-desc">Harga: Tinggi → Rendah</option>
+                    <option value="sqft-desc">Sqft: Terbesar dulu</option>
+                    <option value="title">Nama A–Z</option>
+                </select>
+                <input type="text" id="filterText" placeholder="Cari nama properti...">
+                <span class="count-chip" id="countChip"></span>
+            </div>
+            <div class="table-wrap">
+                <table id="listingsTable">
+                    <thead>
+                        <tr>
+                            <th>Judul Listing</th>
+                            <th>Area</th>
+                            <th>Tipe</th>
+                            <th>RM / bulan</th>
+                            <th>RM / tahun (est.)</th>
+                            <th>Sqft</th>
+                            <th>Furnitur</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="dl-group">
+                <button class="dl-btn primary" id="dlXlsx">⬇ Download .xlsx</button>
+                <button class="dl-btn secondary" id="dlCsv">⬇ Download .csv</button>
+            </div>
+
+            <div class="sec-header">
+                <span class="sec-num">06</span>
+                <h2>Distribusi Harga</h2>
+                <div class="sec-rule"></div>
+            </div>
+            <div class="chart-card">
+                <div id="histogram"></div>
+            </div>
+
+            <div class="sec-header">
+                <span class="sec-num">07</span>
+                <h2>Kalkulator ROI</h2>
+                <div class="sec-rule"></div>
+            </div>
+            <div class="roi-card">
+                <div class="roi-fields">
+                    <div class="roi-field">
+                        <label>Harga Beli Properti (RM)</label>
+                        <input type="number" id="roiPrice" value="900000">
+                    </div>
+                    <div class="roi-field">
+                        <label>Sewa per Bulan (RM)</label>
+                        <input type="number" id="roiRent" value="0">
+                    </div>
+                    <div class="roi-field">
+                        <label>Biaya Tahunan Lain (RM)</label>
+                        <input type="number" id="roiCost" value="3000">
+                    </div>
+                </div>
+                <div class="roi-result" id="roiResult">Gross yield: —</div>
+            </div>
+
+        </div>
+
+        <!-- EMPTY STATE -->
+        <div id="emptyState">
+            <div class="empty-state">
+                <div class="empty-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 17 L9 10 L13 13 L21 4" stroke="#1B7F4A" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M3 21 L21 21" stroke="#9BA8BF" stroke-width="1.2" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Belum ada data</h3>
+                <p>Ketik nama area di atas dan klik "Tarik Data" untuk mulai analisis harga sewa.</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="footer-col-icon green">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="8" cy="8" r="6" stroke="#1B7F4A" stroke-width="1.5" />
+                            <path d="M5 8 L7 10 L11 6" stroke="#1B7F4A" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h4>Data Live & Transparan</h4>
+                    <p>Semua data ditarik secara <strong>live</strong> melalui headless browser dari halaman publik
+                        SPEEDHOME.
+                        Tidak ada data tersimpan secara permanen di tool ini.</p>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-icon amber">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2 L8 9" stroke="#A85A00" stroke-width="1.5" stroke-linecap="round" />
+                            <circle cx="8" cy="12" r="1" fill="#A85A00" />
+                            <path d="M3 14 L8 2 L13 14" stroke="#A85A00" stroke-width="1.4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h4>Catatan Akurasi</h4>
+                    <p>Hanya listing dalam radius <strong>±12 km</strong> dari pusat area yang ditampilkan. Harga
+                        tahunan adalah
+                        estimasi <strong>(×12 bulan)</strong>. Status furnitur tidak tersedia di kartu listing
+                        SPEEDHOME.</p>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-icon blue">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect x="2" y="2" width="12" height="12" rx="2" stroke="#1C5FAD" stroke-width="1.4" />
+                            <path d="M5 8 L11 8M5 5.5 L11 5.5M5 10.5 L8.5 10.5" stroke="#1C5FAD" stroke-width="1.3"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h4>Penggunaan Data</h4>
+                    <p>Data bersumber dari halaman publik SPEEDHOME dan hanya untuk keperluan riset harga pasar.
+                        Scraping
+                        dilakukan secara sopan sesuai <strong>robots.txt</strong>.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span class="footer-badge ok">✓ robots.txt-compliant</span>
+                    <span class="footer-badge warn">Est. data</span>
+                    <span>RentPulse · SPEEDHOME Price Intelligence</span>
+                </div>
+                <div class="footer-bottom-right" id="footerDate">—</div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        const API_BASE = "http://127.0.0.1:8000";
+
+        const AREA_SUGGESTIONS = [
+            ["Mont Kiara", "Kuala Lumpur"], ["Solaris Mont Kiara", "Kuala Lumpur"],
+            ["Mont Kiara Bayu", "Kuala Lumpur"], ["Bukit Damansara", "Kuala Lumpur"],
+            ["Selangor", "Selangor"], ["TTDI", "Kuala Lumpur"],
+            ["Damansara Perdana", "Selangor"], ["Kuala Lumpur", "Kuala Lumpur"],
+            ["Sentul", "Kuala Lumpur"], ["Dutamas", "Kuala Lumpur"],
+            ["Segambut", "Kuala Lumpur"], ["Sri Hartamas", "Kuala Lumpur"],
+            ["Jalan Ipoh", "Kuala Lumpur"], ["Petaling Jaya", "Selangor"],
+            ["Cyberjaya", "Selangor"], ["Subang Jaya", "Selangor"],
+            ["Puchong", "Selangor"], ["Cheras", "Kuala Lumpur"],
+            ["Bangsar", "Kuala Lumpur"], ["Shah Alam", "Selangor"],
+        ];
+
+        let currentDataset = null;
+
+        const dateStr = new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' });
+        document.getElementById('dateStamp').textContent = dateStr;
+        document.getElementById('footerDate').textContent = dateStr;
+
+        const qInput = document.getElementById('queryInput');
+        const sugBox = document.getElementById('suggestions');
+        let activeIdx = -1;
+
+        qInput.addEventListener('input', () => {
+            const v = qInput.value.trim().toLowerCase();
+            activeIdx = -1;
+            if (!v || v.startsWith('http')) { sugBox.style.display = 'none'; return; }
+            const matches = AREA_SUGGESTIONS.filter(a => a[0].toLowerCase().includes(v));
+            if (!matches.length) { sugBox.style.display = 'none'; return; }
+            sugBox.innerHTML = matches.map(m =>
+                `<div data-name="${m[0]}"><span>${m[0]}</span><small>${m[1]}</small></div>`
+            ).join('');
+            sugBox.style.display = 'block';
+        });
+        sugBox.addEventListener('click', e => {
+            const row = e.target.closest('div[data-name]');
+            if (row) { qInput.value = row.dataset.name; sugBox.style.display = 'none'; runSearch(); }
+        });
+        qInput.addEventListener('keydown', e => {
+            const rows = [...sugBox.querySelectorAll('div[data-name]')];
+            if (e.key === 'ArrowDown') { activeIdx = Math.min(activeIdx + 1, rows.length - 1); updateActive(rows); e.preventDefault(); }
+            else if (e.key === 'ArrowUp') { activeIdx = Math.max(activeIdx - 1, 0); updateActive(rows); e.preventDefault(); }
+            else if (e.key === 'Enter') {
+                if (activeIdx >= 0 && rows[activeIdx]) qInput.value = rows[activeIdx].dataset.name;
+                sugBox.style.display = 'none'; runSearch();
+            }
+        });
+        function updateActive(rows) { rows.forEach((r, i) => r.classList.toggle('active', i === activeIdx)); }
+        document.addEventListener('click', e => { if (!e.target.closest('.search-input-wrap')) sugBox.style.display = 'none'; });
+        document.getElementById('goBtn').addEventListener('click', runSearch);
+
+        function resolveSlug(input) {
+            input = input.trim();
+            if (!input) return null;
+            if (input.startsWith('http')) {
+                const m = input.match(/speedhome\.com\/rent\/([a-z0-9-]+)/i);
+                return m ? m[1].toLowerCase() : null;
+            }
+            return input.toLowerCase().replace(/\s+/g, '-');
+        }
+
+        async function runSearch() {
+            const raw = qInput.value;
+            const slug = resolveSlug(raw);
+            const statusLine = document.getElementById('statusLine');
+            const goBtn = document.getElementById('goBtn');
+            if (!slug) { statusLine.textContent = 'Masukkan nama area atau URL SPEEDHOME yang valid.'; return; }
+            goBtn.disabled = true;
+            statusLine.innerHTML = `<span class="spinner"></span>Menarik data live untuk "<b>${raw}</b>" lewat API scraper (10–30 detik)...`;
+            try {
+                const res = await fetch(`${API_BASE}/api/scrape?slug=${encodeURIComponent(slug)}&pages=2`);
+                if (!res.ok) {
+                    const errBody = await res.json().catch(() => ({}));
+                    throw new Error(errBody.detail || `API mengembalikan status ${res.status}`);
+                }
+                const data = await res.json();
+                if (!data.units || !data.units.length) throw new Error('Tidak ada unit ditemukan untuk area ini.');
+                const ds = {
+                    label: data.label || raw,
+                    sourceUrl: data.source_url || `https://speedhome.com/rent/${slug}`,
+                    units: data.units.map(u => ({
+                        title: u.title || 'Untitled',
+                        area: deriveArea(u.title, data.label || raw),
+                        bedrooms: u.bedrooms, sqft: u.sqft,
+                        price: u.price_month, url: u.url,
+                    })),
+                };
+                currentDataset = ds;
+                statusLine.innerHTML = `✓ Live dari API — <b>${ds.label}</b>, ${ds.units.length} unit ditemukan &nbsp;·&nbsp; Radius ±12 km &nbsp;·&nbsp; <a href="${ds.sourceUrl}" target="_blank">Lihat sumber →</a>`;
+                renderAll(ds);
+            } catch (err) {
+                document.getElementById('resultsArea').style.display = 'none';
+                document.getElementById('emptyState').style.display = 'block';
+                statusLine.innerHTML = `⚠ Gagal mengambil data: ${err.message}. Pastikan API server (<code>uvicorn api_server:app --port 8000</code>) sedang berjalan.`;
+            } finally { goBtn.disabled = false; }
+        }
+
+        function deriveArea(title, fallback) {
+            if (!title) return fallback;
+            const parts = title.split(',');
+            return parts.length > 1 ? parts[parts.length - 1].trim() : fallback;
+        }
+
+        function mean(a) { return a.reduce((s, x) => s + x, 0) / a.length; }
+        function median(a) {
+            const s = [...a].sort((x, y) => x - y), n = s.length;
+            return n % 2 ? s[(n - 1) / 2] : (s[n / 2 - 1] + s[n / 2]) / 2;
+        }
+        function mode(a) {
+            const b = {};
+            a.forEach(x => { const k = Math.round(x / 50) * 50; b[k] = (b[k] || 0) + 1; });
+            let best = null, bestC = 0;
+            for (const k in b) { if (b[k] > bestC) { bestC = b[k]; best = Number(k); } }
+            return bestC > 1 ? best : Math.round(median(a) / 50) * 50;
+        }
+        function segmentOf(bed) {
+            if (bed === null || bed === undefined) return 'Room (Shared)';
+            if (typeof bed === 'string') return 'Room (Shared)';
+            if (bed === 0) return 'Studio';
+            if (bed >= 4) return '4BR+';
+            return bed + 'BR';
+        }
+        const SEG_ORDER = ['Studio', '1BR', '2BR', '3BR', '4BR+', 'Room (Shared)'];
+
+        function renderAll(ds) {
+            document.getElementById('emptyState').style.display = 'none';
+            document.getElementById('resultsArea').style.display = 'block';
+            const units = ds.units.map(u => ({ ...u, seg: segmentOf(u.bedrooms) }));
+            renderSummary(units); renderCoverage(); renderInsights(units);
+            renderListings(units); renderHistogram(units); setupRoi(units);
+        }
+
+        function renderSummary(units) {
+            const segs = {};
+            units.forEach(u => { (segs[u.seg] = segs[u.seg] || []).push(u); });
+            const tbody = document.querySelector('#summaryTable tbody');
+            tbody.innerHTML = '';
+            SEG_ORDER.filter(s => segs[s]).forEach(segName => {
+                const list = segs[segName], prices = list.map(u => u.price);
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${segName}</td><td>${list.length}</td><td>RM ${Math.round(mean(prices)).toLocaleString()}</td><td>RM ${Math.round(median(prices)).toLocaleString()}</td><td>RM ${Math.round(mode(prices)).toLocaleString()}</td><td>RM ${Math.round(median(prices)).toLocaleString()}</td><td>—</td>`;
+                tbody.appendChild(tr);
+            });
+            const grid = document.getElementById('statGrid');
+            grid.innerHTML = '';
+            SEG_ORDER.filter(s => segs[s]).forEach(segName => {
+                const list = segs[segName], prices = list.map(u => u.price);
+                const sqfts = list.filter(u => u.sqft).map(u => u.sqft);
+                const avgSqft = sqfts.length ? Math.round(mean(sqfts)) : null;
+                const med = Math.round(median(prices)), avg = Math.round(mean(prices)), mo = Math.round(mode(prices));
+                const card = document.createElement('div');
+                card.className = 'stat-card';
+                card.innerHTML = `
+      <div class="stat-card-top">
+        <div class="stat-type">${segName}</div>
+        <div class="stat-count">${list.length} unit</div>
+      </div>
+      <div class="stat-price"><span class="currency">RM </span>${med.toLocaleString()}</div>
+      <div class="stat-rows">
+        <div class="stat-row"><span class="stat-row-label">Rata-rata</span><span class="stat-row-val">RM ${avg.toLocaleString()}</span></div>
+        <div class="stat-row"><span class="stat-row-label">Modus</span><span class="stat-row-val">RM ${mo.toLocaleString()}</span></div>
+        <div class="stat-row"><span class="stat-row-label">Fair price</span><span class="fair-tag">RM ${med.toLocaleString()}</span></div>
+        ${avgSqft ? `<div class="stat-row"><span class="stat-row-label">Avg sqft</span><span class="stat-row-val">${avgSqft.toLocaleString()} sqft</span></div>` : ''}
+      </div>`;
+                grid.appendChild(card);
+            });
+            const filterSeg = document.getElementById('filterSeg');
+            filterSeg.innerHTML = '<option value="all">Semua tipe</option>' +
+                SEG_ORDER.filter(s => segs[s]).map(s => `<option value="${s}">${s} (${segs[s].length})</option>`).join('');
+        }
+
+        function renderCoverage() {
+            document.getElementById('coverageStrip').innerHTML = `
+    <div class="cov-pill ok"><span class="dot"></span>Bulanan — tersedia dari listing</div>
+    <div class="cov-pill ok"><span class="dot"></span>Tahunan — estimasi (×12)</div>
+    <div class="cov-pill no"><span class="dot"></span>Harian — tidak tersedia di SPEEDHOME</div>`;
+        }
+
+        function renderInsights(units) {
+            const withSqft = units.filter(u => u.sqft);
+            const avgPsf = withSqft.length ? mean(withSqft.map(u => u.price / u.sqft)) : null;
+            const cheapest = units.reduce((a, b) => a.price < b.price ? a : b);
+            const priciest = units.reduce((a, b) => a.price > b.price ? a : b);
+            document.getElementById('insightCards').innerHTML = `
+    <div class="insight-card"><div class="insight-k">Harga per Sqft (avg)</div><div class="insight-v">RM ${avgPsf ? avgPsf.toFixed(2) : '—'}<small>/sqft/bln</small></div></div>
+    <div class="insight-card"><div class="insight-k">Termurah</div><div class="insight-v">RM ${cheapest.price.toLocaleString()}<small>${cheapest.title.slice(0, 30)}</small></div></div>
+    <div class="insight-card"><div class="insight-k">Termahal</div><div class="insight-v">RM ${priciest.price.toLocaleString()}<small>${priciest.title.slice(0, 30)}</small></div></div>
+    <div class="insight-card"><div class="insight-k">Total Unit</div><div class="insight-v">${units.length}<small>unit live dari API</small></div></div>`;
+        }
+
+        let listingsCache = [];
+        function renderListings(units) {
+            listingsCache = units; applyListingFilters();
+            document.getElementById('filterSeg').onchange = applyListingFilters;
+            document.getElementById('sortBy').onchange = applyListingFilters;
+            document.getElementById('filterText').oninput = applyListingFilters;
+        }
+        function applyListingFilters() {
+            const seg = document.getElementById('filterSeg').value;
+            const sortBy = document.getElementById('sortBy').value;
+            const text = document.getElementById('filterText').value.toLowerCase();
+            let rows = listingsCache.filter(u =>
+                (seg === 'all' || u.seg === seg) &&
+                (!text || u.title.toLowerCase().includes(text) || (u.area || '').toLowerCase().includes(text))
+            );
+            if (sortBy === 'price-asc') rows.sort((a, b) => a.price - b.price);
+            if (sortBy === 'price-desc') rows.sort((a, b) => b.price - a.price);
+            if (sortBy === 'sqft-desc') rows.sort((a, b) => (b.sqft || 0) - (a.sqft || 0));
+            if (sortBy === 'title') rows.sort((a, b) => a.title.localeCompare(b.title));
+            document.querySelector('#listingsTable tbody').innerHTML = rows.map(u => `
+    <tr>
+      <td class="title-cell" title="${u.title}">${u.title}</td>
+      <td style="color:var(--muted)">${u.area || '—'}</td>
+      <td><span class="seg-tag">${u.seg}</span></td>
+      <td class="price-rm">RM ${u.price.toLocaleString()}</td>
+      <td class="price-rm" style="color:var(--faint)">RM ${(u.price * 12).toLocaleString()} <small style="font-size:10px">(est.)</small></td>
+      <td style="color:var(--muted)">${u.sqft ? u.sqft.toLocaleString() + ' sqft' : '<span style="color:var(--faint)">N/A</span>'}</td>
+      <td><span class="badge-unfurn">Tidak tercantum</span></td>
+      <td><a href="${u.url}" target="_blank">Lihat →</a></td>
+    </tr>`).join('');
+            document.getElementById('countChip').textContent = `${rows.length} / ${listingsCache.length} unit`;
+            window._currentRows = rows;
+        }
+
+        function renderHistogram(units) {
+            const buckets = {};
+            units.forEach(u => { const b = Math.floor(u.price / 500) * 500; buckets[b] = (buckets[b] || 0) + 1; });
+            const keys = Object.keys(buckets).map(Number).sort((a, b) => a - b);
+            const max = Math.max(...Object.values(buckets));
+            document.getElementById('histogram').innerHTML = keys.map(k => `
+    <div class="bar-row">
+      <div class="bar-label">RM ${k.toLocaleString()}–${(k + 499).toLocaleString()}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(buckets[k] / max * 100).toFixed(0)}%"></div></div>
+      <div class="bar-val">${buckets[k]} unit</div>
+    </div>`).join('');
+        }
+
+        function setupRoi(units) {
+            document.getElementById('roiRent').value = Math.round(median(units.map(u => u.price)));
+            function calc() {
+                const price = Number(document.getElementById('roiPrice').value) || 0;
+                const rent = Number(document.getElementById('roiRent').value) || 0;
+                const cost = Number(document.getElementById('roiCost').value) || 0;
+                const annualRent = rent * 12;
+                const net = price ? ((annualRent - cost) / price * 100) : 0;
+                const gross = price ? (annualRent / price * 100) : 0;
+                document.getElementById('roiResult').textContent =
+                    `Gross yield: ${gross.toFixed(2)}%  ·  Net yield: ${net.toFixed(2)}%  ·  Payback: ~${price && net > 0 ? (100 / net).toFixed(1) : '—'} tahun`;
+            }
+            ['roiPrice', 'roiRent', 'roiCost'].forEach(id => document.getElementById(id).addEventListener('input', calc));
+            calc();
+        }
+
+        function buildExportRows() {
+            return (window._currentRows || []).map(u => ({
+                'Judul Listing': u.title, 'Area': u.area || '—', 'Tipe Unit': u.seg,
+                'RM per Bulan': u.price, 'RM per Tahun (estimasi)': u.price * 12,
+                'Sqft': u.sqft || 'N/A', 'Status Furnitur': 'Tidak tercantum di kartu listing',
+                'Link Listing': u.url
+            }));
+        }
+        document.getElementById('dlXlsx').addEventListener('click', () => {
+            const rows = buildExportRows(); if (!rows.length) return;
+            const ws = XLSX.utils.json_to_sheet(rows), wb = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(wb, ws, "Listings");
+            const a = (currentDataset.label || 'AREA').replace(/\s+/g, '_');
+            const d = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+            XLSX.writeFile(wb, `SPEEDHOME_${a}_${d}.xlsx`);
+        });
+        document.getElementById('dlCsv').addEventListener('click', () => {
+            const rows = buildExportRows(); if (!rows.length) return;
+            const headers = Object.keys(rows[0]);
+            const csv = [headers.join(',')].concat(
+                rows.map(r => headers.map(h => `"${String(r[h]).replace(/"/g, '""')}"`).join(','))
+            ).join('\n');
+            const blob = new Blob([csv], { type: 'text/csv' }), el = document.createElement('a');
+            const a = (currentDataset.label || 'AREA').replace(/\s+/g, '_');
+            const d = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+            el.href = URL.createObjectURL(blob); el.download = `SPEEDHOME_${a}_${d}.csv`; el.click();
+        });
+
+        document.getElementById('resultsArea').style.display = 'none';
+        document.getElementById('emptyState').style.display = 'block';
+    </script>
+</body>
+
+</html>
