@@ -81,7 +81,7 @@ def parse_listings(html: str, debug: bool = False):
     if debug and cards:
         with open("debug_card.html", "w", encoding="utf-8") as f:
             f.write(cards[0].prettify())
-        print("Wrote debug_card.html with the first listing card's full HTML", file=sys.stderr)
+        print("Wrote debug_card.html with the first listing card's full HTML", file=sys.stderr, flush=True)
 
     for a in cards:
         href = a.get("href", "")
@@ -182,7 +182,7 @@ def geocode_area(name: str):
             time.sleep(1.0)  # respect Nominatim's 1 req/sec usage policy
             return coords
     except Exception as e:
-        print(f"[geocode] failed for {name!r}: {e}", file=sys.stderr)
+        print(f"[geocode] failed for {name!r}: {e}", file=sys.stderr, flush=True)
     _geocode_cache[name] = None
     return None
 
@@ -272,7 +272,7 @@ def scrape_area(slug: str, max_pages: int = 3):
             page_title = title_m.group(1) if title_m else "(no <title>)"
             print(f"[diag] page {page_num}: html_length={len(html)} title={page_title!r}", file=sys.stderr)
             if "just a moment" in html.lower() or "checking your browser" in html.lower():
-                print("[diag] Cloudflare challenge page detected -- NOT the real listing page", file=sys.stderr)
+                print("[diag] Cloudflare challenge page detected -- NOT the real listing page", file=sys.stderr, flush=True)
 
             units = parse_listings(html, debug=(page_num == 1))
             print(f"[diag] page {page_num}: parsed {len(units)} unit(s) before filtering", file=sys.stderr)
@@ -281,7 +281,7 @@ def scrape_area(slug: str, max_pages: int = 3):
                 has_title_class = "propertyTitle" in html
                 has_price_class = "propertyPrice" in html
                 print(f"[diag] 0 units found -- raw checks: detail_link_count={detail_link_count} "
-                      f"has_propertyTitle_class={has_title_class} has_propertyPrice_class={has_price_class}", file=sys.stderr)
+                      f"has_propertyTitle_class={has_title_class} has_propertyPrice_class={has_price_class}", file=sys.stderr, flush=True)
                 print(f"[diag] html snippet (first 800 chars): {html[:800]!r}", file=sys.stderr)
             new_units = [u for u in units if u["url_slug"] not in seen_slugs]
             if not new_units:
@@ -293,7 +293,7 @@ def scrape_area(slug: str, max_pages: int = 3):
         browser.close()
 
     filtered, filter_info = filter_by_geo_radius(all_units, slug)
-    print(f"[filter] {filter_info}", file=sys.stderr)
+    print(f"[filter] {filter_info}", file=sys.stderr, flush=True)
     return filtered, filter_info
 
 
