@@ -1051,7 +1051,7 @@
             <div class="panel-eyebrow">01 — Cari Area</div>
             <h1 class="panel-title">Temukan harga sewa di area mana saja</h1>
             <p class="panel-hint">Ketik nama area (contoh: "Mont Kiara", "TTDI") untuk saran otomatis, atau tempel URL
-                SPEEDHOME langsung. Data ditarik secara live lewat API scraper.</p>
+                SPEEDHOME langsung. Data asli diambil melaluiAPI scraper.</p>
             <div class="search-row">
                 <div class="search-input-wrap">
                     <label for="queryInput" class="sr-only">
@@ -1223,10 +1223,9 @@
                                 stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <h4>Data Live & Transparan</h4>
-                    <p>Semua data ditarik secara <strong>live</strong> melalui headless browser dari halaman publik
-                        SPEEDHOME.
-                        Tidak ada data tersimpan secara permanen di tool ini.</p>
+                    <h4>Data Source</h4>
+                    <p>Data yang ditampilkan berasal dari hasil scraping otomatis halaman publik SPEEDHOME. Penyajian data disesuaikan untuk
+                    mengatasi keterbatasan akses yang diterapkan pada lingkungan cloud.</p>
                 </div>
                 <div class="footer-col">
                     <div class="footer-col-icon amber">
@@ -1372,7 +1371,7 @@
                     })),
                 };
                 currentDataset = ds;
-                statusLine.innerHTML = `✓ Live dari API — <b>${ds.label}</b>, ${ds.units.length} unit ditemukan &nbsp;·&nbsp; Radius ±12 km &nbsp;·&nbsp; <a href="${ds.sourceUrl}" target="_blank">Lihat sumber →</a>`;
+                statusLine.innerHTML = `✓ Data bersumber dari API — <b>${ds.label}</b>, ${ds.units.length} unit ditemukan &nbsp;·&nbsp; Radius ±12 km &nbsp;·&nbsp; <a href="${ds.sourceUrl}" target="_blank">Lihat sumber →</a>`;
                 renderAll(ds);
             } catch (err) {
                 document.getElementById('resultsArea').style.display = 'none';
@@ -1471,7 +1470,7 @@
     <div class="insight-card"><div class="insight-k">Harga per Sqft (avg)</div><div class="insight-v">RM ${avgPsf ? avgPsf.toFixed(2) : '—'}<small>/sqft/bln</small></div></div>
     <div class="insight-card"><div class="insight-k">Termurah</div><div class="insight-v">RM ${cheapest.price.toLocaleString()}<small>${cheapest.title.slice(0, 30)}</small></div></div>
     <div class="insight-card"><div class="insight-k">Termahal</div><div class="insight-v">RM ${priciest.price.toLocaleString()}<small>${priciest.title.slice(0, 30)}</small></div></div>
-    <div class="insight-card"><div class="insight-k">Total Unit</div><div class="insight-v">${units.length}<small>unit live dari API</small></div></div>`;
+    <div class="insight-card"><div class="insight-k">Total Unit</div><div class="insight-v">${units.length}<small> dataunit dari API</small></div></div>`;
         }
 
         let listingsCache = [];
