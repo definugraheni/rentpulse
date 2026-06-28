@@ -187,7 +187,7 @@ def geocode_area(name: str):
     return None
 
 
-def filter_by_geo_radius(units, slug: str, max_radius_km: float = 6.0):
+def filter_by_geo_radius(units, slug: str, max_radius_km: float = 12.0):
     """
     Keep only listings whose true coordinates (read from each card's
     embedded Google Static Map) fall within max_radius_km of the searched
