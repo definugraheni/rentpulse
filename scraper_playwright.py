@@ -63,14 +63,24 @@ def fetch_rendered_html(page, slug: str, page_num: int) -> str:
     if not robots_allows(path):
         raise RuntimeError(f"robots.txt disallows {path} — aborting.")
     page.goto(f"{BASE}{path}", wait_until="domcontentloaded", timeout=45000)
-    # Wait specifically for a listing card link to appear, rather than
-    # waiting for ALL network activity to stop (which may never happen
-    # due to background analytics/tracking requests that never end).
+
+    # Cloudflare sometimes serves an interstitial "Just a moment..." JS
+    # challenge page before the real content. A real browser auto-solves
+    # this in a few seconds and gets redirected -- we poll for that instead
+    # of assuming the first page.content() is the final page.
+    for _ in range(10):  # up to ~10 x 1.5s = 15s of polling
+        title = page.title()
+        if "just a moment" not in title.lower():
+            break
+        page.wait_for_timeout(1500)
+    else:
+        print(f"[diag] Cloudflare challenge did not clear after 15s for {path!r}", file=sys.stderr, flush=True)
+
     try:
         page.wait_for_selector('a[href*="/details/"]', timeout=20000)
     except Exception:
         pass  # might genuinely be an area with 0 listings -- let parsing decide
-    page.wait_for_timeout(1500)  # let Cloudflare's JS challenge fully settle
+    page.wait_for_timeout(1500)
     return page.content()
 
 
@@ -187,7 +197,7 @@ def geocode_area(name: str):
     return None
 
 
-def filter_by_geo_radius(units, slug: str, max_radius_km: float = 12.0):
+def filter_by_geo_radius(units, slug: str, max_radius_km: float = 6.0):
     """
     Keep only listings whose true coordinates (read from each card's
     embedded Google Static Map) fall within max_radius_km of the searched
@@ -244,7 +254,7 @@ def filter_by_geo_radius(units, slug: str, max_radius_km: float = 12.0):
     filter_info["total_after"] = len(kept)
     return kept, filter_info
 
-def scrape_area(slug: str, max_pages: int = 3):
+def scrape_area(slug: str, max_pages: int = 3, _retry: int = 0):
     all_units = []
     seen_slugs = set()
     with sync_playwright() as p:
@@ -291,6 +301,14 @@ def scrape_area(slug: str, max_pages: int = 3):
             all_units.extend(new_units)
             time.sleep(DELAY_SECONDS)
         browser.close()
+
+    # Flaky-run safety net: if we got NOTHING at all (likely a transient
+    # Cloudflare hiccup or container resource hiccup, not a real "no listings"
+    # case), retry once with a fresh browser before giving up.
+    if len(all_units) == 0 and _retry < 1:
+        print(f"[retry] 0 units on attempt {_retry+1} for slug={slug!r} -- retrying once", file=sys.stderr, flush=True)
+        time.sleep(3)
+        return scrape_area(slug, max_pages=max_pages, _retry=_retry + 1)
 
     filtered, filter_info = filter_by_geo_radius(all_units, slug)
     print(f"[filter] {filter_info}", file=sys.stderr, flush=True)
