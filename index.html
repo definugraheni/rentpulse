@@ -60,6 +60,17 @@
             margin: 0 auto;
             padding: 0 20px 80px;
         }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
 
         /* ── MASTHEAD ─────────────────────────────────── */
         .masthead {
@@ -1043,8 +1054,11 @@
                 SPEEDHOME langsung. Data ditarik secara live lewat API scraper.</p>
             <div class="search-row">
                 <div class="search-input-wrap">
-                    <input type="text" id="queryInput" placeholder="Mont Kiara, TTDI, Bangsar, Cyberjaya..."
-                        autocomplete="off">
+                    <label for="queryInput" class="sr-only">
+                        Cari area atau URL SPEEDHOME
+                    </label>
+                    
+                    <input type="text" id="queryInput" placeholder="Mont Kiara, TTDI, Bangsar..." autocomplete="off">
                     <div class="suggestions" id="suggestions"></div>
                 </div>
                 <button id="goBtn">Tarik Data →</button>
@@ -1097,15 +1111,27 @@
                 <div class="sec-rule"></div>
             </div>
             <div class="controls">
+                <label for="filterSeg" class="sr-only">
+                    Filter tipe unit
+                </label>
+
                 <select id="filterSeg">
                     <option value="all">Semua tipe</option>
                 </select>
+                <label for="sortBy" class="sr-only">
+                    Urutkan daftar
+                </label>
+                
                 <select id="sortBy">
                     <option value="price-asc">Harga: Rendah → Tinggi</option>
                     <option value="price-desc">Harga: Tinggi → Rendah</option>
                     <option value="sqft-desc">Sqft: Terbesar dulu</option>
                     <option value="title">Nama A–Z</option>
                 </select>
+                <label for="filterText" class="sr-only">
+                    Cari nama properti
+                </label>
+                
                 <input type="text" id="filterText" placeholder="Cari nama properti...">
                 <span class="count-chip" id="countChip"></span>
             </div>
@@ -1148,16 +1174,22 @@
             <div class="roi-card">
                 <div class="roi-fields">
                     <div class="roi-field">
-                        <label>Harga Beli Properti (RM)</label>
-                        <input type="number" id="roiPrice" value="900000">
+                        <div class="roi-field">
+                            <label for="roiPrice">Harga Beli Properti (RM)</label>
+                            <input type="number" id="roiPrice" value="900000">
+                        </div>
                     </div>
                     <div class="roi-field">
-                        <label>Sewa per Bulan (RM)</label>
+                    <div class="roi-field">
+                        <label for="roiRent">Sewa per Bulan (RM)</label>
                         <input type="number" id="roiRent" value="0">
                     </div>
+                    </div>
                     <div class="roi-field">
-                        <label>Biaya Tahunan Lain (RM)</label>
-                        <input type="number" id="roiCost" value="3000">
+                <div class="roi-field">
+                    <label for="roiCost">Biaya Tahunan Lain (RM)</label>
+                    <input type="number" id="roiCost" value="3000">
+                </div>
                     </div>
                 </div>
                 <div class="roi-result" id="roiResult">Gross yield: —</div>
@@ -1238,7 +1270,18 @@
     </div>
 
     <script>
-        const API_BASE = "https://rentpulse-production-2941.up.railway.app";
+        // const API_BASE =
+        //         location.hostname === "localhost"
+        //             ? "http://127.0.0.1:8000"
+        //             : "";
+
+        //     fetch(`${API_BASE}/api/scrape?slug=${slug}`);
+        // const API_BASE = "http://127.0.0.1:8000";
+        const API_BASE =
+                location.hostname === "localhost" ||
+                    location.hostname === "127.0.0.1"
+                    ? "http://127.0.0.1:8000"
+                    : "https://rentpulse-production.up.railway.app";
 
         const AREA_SUGGESTIONS = [
             ["Mont Kiara", "Kuala Lumpur"], ["Solaris Mont Kiara", "Kuala Lumpur"],
@@ -1316,6 +1359,7 @@
                     throw new Error(errBody.detail || `API mengembalikan status ${res.status}`);
                 }
                 const data = await res.json();
+                console.log(data.units[0]);
                 if (!data.units || !data.units.length) throw new Error('Tidak ada unit ditemukan untuk area ini.');
                 const ds = {
                     label: data.label || raw,

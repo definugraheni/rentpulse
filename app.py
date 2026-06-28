@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+
 from scraper_playwright import scrape_area
 
 app = FastAPI(title="RentPulse API")
@@ -12,21 +14,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Menampilkan halaman utama
 @app.get("/")
-def root():
-    return {
-        "status": "ok",
-        "message": "RentPulse API Running"
-    }
+def home():
+    return FileResponse("index.html")
 
+# API Scraper
 @app.get("/api/scrape")
 def scrape(slug: str):
+
     units, filter_info = scrape_area(slug)
 
     return {
-        "slug": slug,
         "label": slug.replace("-", " ").title(),
-        "source_url": f"https://speedhome.com/rent/{slug}",
         "units": units,
         "filter_info": filter_info
     }
