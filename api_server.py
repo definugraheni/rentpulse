@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 import time
 
 from scraper_playwright import scrape_area
@@ -23,11 +24,6 @@ def scrape(
     pages: int = Query(2, ge=1, le=5),
 ):
     slug = slug.lower().strip()
-
-    # cek cache
-    # cached = _cache.get(slug)
-    # if cached and (time.time() - cached["ts"]) < _CACHE_TTL:
-    #     return cached["data"]
 
     try:
         units, filter_info = scrape_area(slug, max_pages=pages)
@@ -55,8 +51,5 @@ def scrape(
 
 
 @app.get("/")
-def root():
-    return {
-        "status": "ok",
-        "usage": "/api/scrape?slug=mont-kiara&pages=2",
-    }
+def home():
+    return FileResponse("index.html")
