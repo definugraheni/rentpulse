@@ -1,0 +1,139 @@
+{
+  "slug": "mont-kiara-bayu",
+  "units": [
+    [
+      {
+        "title": "Taman Sri Segambut, Kuala Lumpur",
+        "sqft": null,
+        "bedrooms": "SMALL",
+        "price_month": 440,
+        "url": "https://speedhome.com/details/taman-sri-segambut-kuala-lumpur-pauqzool",
+        "url_slug": "taman-sri-segambut-kuala-lumpur-pauqzool",
+        "lat": 3.195986811229107,
+        "lng": 101.65817988650818
+      },
+      {
+        "title": "Laman Suria, Mont Kiara",
+        "sqft": 1034,
+        "bedrooms": 2,
+        "price_month": 2900,
+        "url": "https://speedhome.com/details/laman-suria-mont-kiara-uhqvfmfj",
+        "url_slug": "laman-suria-mont-kiara-uhqvfmfj",
+        "lat": 3.16881,
+        "lng": 101.65
+      },
+      {
+        "title": "Taman Sri Segambut, Kuala Lumpur",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 450,
+        "url": "https://speedhome.com/details/taman-sri-segambut-kuala-lumpur-vfgizhcq",
+        "url_slug": "taman-sri-segambut-kuala-lumpur-vfgizhcq",
+        "lat": 3.195986811229107,
+        "lng": 101.65817988650818
+      },
+      {
+        "title": "Taman Sri Segambut, Kuala Lumpur",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 700,
+        "url": "https://speedhome.com/details/taman-sri-segambut-kuala-lumpur-bkaenyrb",
+        "url_slug": "taman-sri-segambut-kuala-lumpur-bkaenyrb",
+        "lat": 3.195986811229107,
+        "lng": 101.65817988650818
+      },
+      {
+        "title": "United Point Residence, Segambut",
+        "sqft": 958,
+        "bedrooms": 3,
+        "price_month": 3500,
+        "url": "https://speedhome.com/details/united-point-residence-segambut-jisissyx",
+        "url_slug": "united-point-residence-segambut-jisissyx",
+        "lat": 3.1918287809,
+        "lng": 101.6535115242
+      },
+      {
+        "title": "Sophia Condominium, Mont Kiara",
+        "sqft": 1000,
+        "bedrooms": 2,
+        "price_month": 3500,
+        "url": "https://speedhome.com/details/sophia-condominium-mont-kiara-ahomfuix",
+        "url_slug": "sophia-condominium-mont-kiara-ahomfuix",
+        "lat": 3.1701,
+        "lng": 101.654
+      },
+      {
+        "title": "MET 1 Residences, Kuala Lumpur",
+        "sqft": 677,
+        "bedrooms": 1,
+        "price_month": 2999,
+        "url": "https://speedhome.com/details/met-1-residences-kuala-lumpur-uiachrkj",
+        "url_slug": "met-1-residences-kuala-lumpur-uiachrkj",
+        "lat": 3.1494727,
+        "lng": 101.7139056
+      },
+      {
+        "title": "Dorsett Hartamas, Kuala Lumpur",
+        "sqft": 721,
+        "bedrooms": 0,
+        "price_month": 3000,
+        "url": "https://speedhome.com/details/dorsett-hartamas-kuala-lumpur-bqqtivkv",
+        "url_slug": "dorsett-hartamas-kuala-lumpur-bqqtivkv",
+        "lat": 3.1627638811305037,
+        "lng": 101.65577358650695
+      },
+      {
+        "title": "Villa Crystal, Segambut",
+        "sqft": 1050,
+        "bedrooms": 1,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/villa-crystal-segambut-lyfindli",
+        "url_slug": "villa-crystal-segambut-lyfindli",
+        "lat": 3.1839445769,
+        "lng": 101.6508507729
+      },
+      {
+        "title": "Duta Ria Condominium",
+        "sqft": 1326,
+        "bedrooms": 3,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/duta-ria-condominium-wzskavnt",
+        "url_slug": "duta-ria-condominium-wzskavnt",
+        "lat": 3.17858,
+        "lng": 101.655
+      },
+      {
+        "title": "Verve Suites, Mont Kiara",
+        "sqft": 463,
+        "bedrooms": 1,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/verve-suites-mont-kiara-sigflyhx",
+        "url_slug": "verve-suites-mont-kiara-sigflyhx",
+        "lat": 3.16741,
+        "lng": 101.646
+      },
+      {
+        "title": "United Point Residence, Segambut",
+        "sqft": 958,
+        "bedrooms": 1,
+        "price_month": 600,
+        "url": "https://speedhome.com/details/united-point-residence-segambut-qpkcxymy",
+        "url_slug": "united-point-residence-segambut-qpkcxymy",
+        "lat": 3.1918287809,
+        "lng": 101.6535115242
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Mont Kiara Bayu",
+      "radius_km": 12.0,
+      "target_lat": 3.1839445769,
+      "target_lng": 101.655,
+      "geocode_succeeded": false,
+      "total_before": 29,
+      "total_after": 12,
+      "dropped_no_coords": 17,
+      "dropped_out_of_radius": 0
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "slug": "bangsar",
+  "units": [
+    [
+      {
+        "title": "Petalz Residences, Old Klang Road",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 1150,
+        "url": "https://speedhome.com/details/petalz-residences-old-klang-road-dutyuqvz",
+        "url_slug": "petalz-residences-old-klang-road-dutyuqvz",
+        "lat": 3.0852874960565866,
+        "lng": 101.66156726137696
+      },
+      {
+        "title": "Bukit Damansara, Damansara Heights",
+        "sqft": 2500,
+        "bedrooms": 4,
+        "price_month": 8500,
+        "url": "https://speedhome.com/details/bukit-damansara-damansara-heights-wfvyjwdp",
+        "url_slug": "bukit-damansara-damansara-heights-wfvyjwdp",
+        "lat": 3.1520966609,
+        "lng": 101.6566183604
+      },
+      {
+        "title": "Petalz Residences, Old Klang Road",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 750,
+        "url": "https://speedhome.com/details/petalz-residences-old-klang-road-ttanswxo",
+        "url_slug": "petalz-residences-old-klang-road-ttanswxo",
+        "lat": 3.0852874960565866,
+        "lng": 101.66156726137696
+      },
+      {
+        "title": "SkyVille 8, Kuala Lumpur",
+        "sqft": 300,
+        "bedrooms": 1,
+        "price_month": 1150,
+        "url": "https://speedhome.com/details/skyville-8-kuala-lumpur-ourlcvrl",
+        "url_slug": "skyville-8-kuala-lumpur-ourlcvrl",
+        "lat": 3.0823926163,
+        "lng": 101.6677567363
+      },
+      {
+        "title": "South View, Bangsar South",
+        "sqft": 450,
+        "bedrooms": 1,
+        "price_month": 1400,
+        "url": "https://speedhome.com/details/south-view-bangsar-south-oufxgabu",
+        "url_slug": "south-view-bangsar-south-oufxgabu",
+        "lat": 3.1139053613,
+        "lng": 101.6651469469
+      },
+      {
+        "title": "South View",
+        "sqft": 990,
+        "bedrooms": 3,
+        "price_month": 3300,
+        "url": "https://speedhome.com/details/south-view-mmhwwetz",
+        "url_slug": "south-view-mmhwwetz",
+        "lat": 3.1139053613,
+        "lng": 101.6651469469
+      },
+      {
+        "title": "Suasana Sentral Loft, Kuala Lumpur",
+        "sqft": 1584,
+        "bedrooms": 3,
+        "price_month": 4100,
+        "url": "https://speedhome.com/details/suasana-sentral-loft-kuala-lumpur-puexcrri",
+        "url_slug": "suasana-sentral-loft-kuala-lumpur-puexcrri",
+        "lat": 3.1313882,
+        "lng": 101.6841041
+      },
+      {
+        "title": "Jalan Limau Manis,Bangsar Park Kuala Lumpur",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 800,
+        "url": "https://speedhome.com/details/jalan-limau-manis-bangsar-park-kuala-lumpur-fqjshlou",
+        "url_slug": "jalan-limau-manis-bangsar-park-kuala-lumpur-fqjshlou",
+        "lat": 3.1323854869365344,
+        "lng": 101.6739699760552
+      },
+      {
+        "title": "Andalucia, Pantai",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 1100,
+        "url": "https://speedhome.com/details/andalucia-pantai-nrgvbjxr",
+        "url_slug": "andalucia-pantai-nrgvbjxr",
+        "lat": 3.1065026557,
+        "lng": 101.6620141268
+      },
+      {
+        "title": "Citizen, Kuala Lumpur",
+        "sqft": 1094,
+        "bedrooms": 4,
+        "price_month": 2800,
+        "url": "https://speedhome.com/details/citizen-kuala-lumpur-innsplrh",
+        "url_slug": "citizen-kuala-lumpur-innsplrh",
+        "lat": 3.0833728841,
+        "lng": 101.6617083549
+      },
+      {
+        "title": "Cubic Botanical, Bangsar South",
+        "sqft": 300,
+        "bedrooms": 0,
+        "price_month": 1550,
+        "url": "https://speedhome.com/details/cubic-botanical-bangsar-south-njoqssqb",
+        "url_slug": "cubic-botanical-bangsar-south-njoqssqb",
+        "lat": 3.093992114012384,
+        "lng": 101.6668631092706
+      },
+      {
+        "title": "Cubic Botanical, Bangsar South",
+        "sqft": 450,
+        "bedrooms": 0,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/cubic-botanical-bangsar-south-qfpufnat",
+        "url_slug": "cubic-botanical-bangsar-south-qfpufnat",
+        "lat": 3.093992114012384,
+        "lng": 101.6668631092706
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Bangsar",
+      "radius_km": 12.0,
+      "target_lat": 3.1065026557,
+      "target_lng": 101.6651469469,
+      "geocode_succeeded": false,
+      "total_before": 33,
+      "total_after": 12,
+      "dropped_no_coords": 21,
+      "dropped_out_of_radius": 0
+    }
+  ]
+}

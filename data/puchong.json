@@ -1,0 +1,289 @@
+{
+  "slug": "puchong",
+  "units": [
+    [
+      {
+        "title": "Desa Tanjung Apartment, Puchong",
+        "sqft": 850,
+        "bedrooms": 3,
+        "price_month": 1200,
+        "url": "https://speedhome.com/details/desa-tanjung-apartment-puchong-wgyxmryw",
+        "url_slug": "desa-tanjung-apartment-puchong-wgyxmryw",
+        "lat": 3.0268265709,
+        "lng": 101.6287708282
+      },
+      {
+        "title": "Sri Bayu Apartment, Puchong",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 490,
+        "url": "https://speedhome.com/details/sri-bayu-apartment-puchong-mtqvhutd",
+        "url_slug": "sri-bayu-apartment-puchong-mtqvhutd",
+        "lat": 3.066467156,
+        "lng": 101.6242593527
+      },
+      {
+        "title": "Sri Bayu Apartment, Puchong",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 950,
+        "url": "https://speedhome.com/details/sri-bayu-apartment-puchong-sihzggqx",
+        "url_slug": "sri-bayu-apartment-puchong-sihzggqx",
+        "lat": 3.066467156,
+        "lng": 101.6242593527
+      },
+      {
+        "title": "Sri Bayu Apartment, Puchong",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 690,
+        "url": "https://speedhome.com/details/sri-bayu-apartment-puchong-kstaumok",
+        "url_slug": "sri-bayu-apartment-puchong-kstaumok",
+        "lat": 3.066467156,
+        "lng": 101.6242593527
+      },
+      {
+        "title": "Aurora Residence, Puchong",
+        "sqft": 1238,
+        "bedrooms": 3,
+        "price_month": 1900,
+        "url": "https://speedhome.com/details/aurora-residence-puchong-spxpvfro",
+        "url_slug": "aurora-residence-puchong-spxpvfro",
+        "lat": 2.9950889508,
+        "lng": 101.5987461805
+      },
+      {
+        "title": "Elegan Residensi, Puchong",
+        "sqft": 3000,
+        "bedrooms": 1,
+        "price_month": 650,
+        "url": "https://speedhome.com/details/elegan-residensi-puchong-ihzmxsuf",
+        "url_slug": "elegan-residensi-puchong-ihzmxsuf",
+        "lat": 2.944515920639807,
+        "lng": 101.59921368397
+      },
+      {
+        "title": "Desa Impiana, Puchong",
+        "sqft": 350,
+        "bedrooms": 0,
+        "price_month": 990,
+        "url": "https://speedhome.com/details/desa-impiana-puchong-fjfzapxl",
+        "url_slug": "desa-impiana-puchong-fjfzapxl",
+        "lat": 2.9968916102,
+        "lng": 101.5927916765
+      },
+      {
+        "title": "Pangsapuri Mutiara Perdana, Subang Jaya",
+        "sqft": 915,
+        "bedrooms": 4,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/pangsapuri-mutiara-perdana-subang-jaya-oaqrvnhd",
+        "url_slug": "pangsapuri-mutiara-perdana-subang-jaya-oaqrvnhd",
+        "lat": 3.0677420587,
+        "lng": 101.6178327799
+      },
+      {
+        "title": "Meta Residences, Seri Kembangan",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 700,
+        "url": "https://speedhome.com/details/meta-residences-seri-kembangan-klxkntlm",
+        "url_slug": "meta-residences-seri-kembangan-klxkntlm",
+        "lat": 2.981723886631498,
+        "lng": 101.66339785927732
+      },
+      {
+        "title": "Taman Putra Perdana, Selangor",
+        "sqft": 2000,
+        "bedrooms": 5,
+        "price_month": 2200,
+        "url": "https://speedhome.com/details/taman-putra-perdana-selangor-cemugmrq",
+        "url_slug": "taman-putra-perdana-selangor-cemugmrq",
+        "lat": 3.0996907,
+        "lng": 101.6192056
+      },
+      {
+        "title": "Villamas Apartment, Puchong",
+        "sqft": 1044,
+        "bedrooms": 3,
+        "price_month": 1100,
+        "url": "https://speedhome.com/details/villamas-apartment-puchong-gonsqsmk",
+        "url_slug": "villamas-apartment-puchong-gonsqsmk",
+        "lat": 3.0678813337,
+        "lng": 101.6240715981
+      },
+      {
+        "title": "D'Ruby Residences, Puchong",
+        "sqft": 1045,
+        "bedrooms": 3,
+        "price_month": 2300,
+        "url": "https://speedhome.com/details/d-ruby-residences-puchong-dafsgyaj",
+        "url_slug": "d-ruby-residences-puchong-dafsgyaj",
+        "lat": 3.0177143901047483,
+        "lng": 101.6048371667308
+      },
+      {
+        "title": "Koi Prima, Puchong",
+        "sqft": 1055,
+        "bedrooms": 3,
+        "price_month": 1300,
+        "url": "https://speedhome.com/details/koi-prima-puchong-jvsbsfpl",
+        "url_slug": "koi-prima-puchong-jvsbsfpl",
+        "lat": 2.9757253239916146,
+        "lng": 101.57662774691795
+      },
+      {
+        "title": "Suria Garden, Puchong",
+        "sqft": 876,
+        "bedrooms": 3,
+        "price_month": 2300,
+        "url": "https://speedhome.com/details/suria-garden-puchong-irtharoz",
+        "url_slug": "suria-garden-puchong-irtharoz",
+        "lat": 2.9964799984171053,
+        "lng": 101.61928447923074
+      },
+      {
+        "title": "3 Elements, Block C, Seri Kembangan",
+        "sqft": 1000,
+        "bedrooms": 3,
+        "price_month": 1400,
+        "url": "https://speedhome.com/details/3-elements-block-c-seri-kembangan-gaiirmzw",
+        "url_slug": "3-elements-block-c-seri-kembangan-gaiirmzw",
+        "lat": 2.9825572,
+        "lng": 101.667597
+      },
+      {
+        "title": "Nilam Puri, Puchong",
+        "sqft": 1022,
+        "bedrooms": 3,
+        "price_month": 1500,
+        "url": "https://speedhome.com/details/nilam-puri-puchong-pwxrjhww",
+        "url_slug": "nilam-puri-puchong-pwxrjhww",
+        "lat": 2.9790202407,
+        "lng": 101.625841856
+      },
+      {
+        "title": "KOI Kinrara Condominium, Puchong",
+        "sqft": 1224,
+        "bedrooms": 3,
+        "price_month": 1350,
+        "url": "https://speedhome.com/details/koi-kinrara-condominium-puchong-mladwnyl",
+        "url_slug": "koi-kinrara-condominium-puchong-mladwnyl",
+        "lat": 3.071852247069134,
+        "lng": 101.62321523068636
+      },
+      {
+        "title": "Kiambang Apartment, Puchong",
+        "sqft": 800,
+        "bedrooms": 3,
+        "price_month": 750,
+        "url": "https://speedhome.com/details/kiambang-apartment-puchong-rpqovrpj",
+        "url_slug": "kiambang-apartment-puchong-rpqovrpj",
+        "lat": 2.9413694179,
+        "lng": 101.6129994392
+      },
+      {
+        "title": "Koi Prima, Puchong",
+        "sqft": 1055,
+        "bedrooms": 3,
+        "price_month": 1650,
+        "url": "https://speedhome.com/details/koi-prima-puchong-nuszbibp",
+        "url_slug": "koi-prima-puchong-nuszbibp",
+        "lat": 2.9757253239916146,
+        "lng": 101.57662774691795
+      },
+      {
+        "title": "BK5, Bandar Kinrara",
+        "sqft": 1772,
+        "bedrooms": 4,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/bk5-bandar-kinrara-fiupsrng",
+        "url_slug": "bk5-bandar-kinrara-fiupsrng",
+        "lat": 3.0441750315567986,
+        "lng": 101.64369972663201
+      },
+      {
+        "title": "Vista Impiana Apartment, Seri Kembangan",
+        "sqft": 1200,
+        "bedrooms": 3,
+        "price_month": 1300,
+        "url": "https://speedhome.com/details/vista-impiana-apartment-seri-kembangan-aaxmuewk",
+        "url_slug": "vista-impiana-apartment-seri-kembangan-aaxmuewk",
+        "lat": 3.039297442,
+        "lng": 101.6903972626
+      },
+      {
+        "title": "Fortune Park, Seri Kembangan",
+        "sqft": 970,
+        "bedrooms": 3,
+        "price_month": 1489,
+        "url": "https://speedhome.com/details/fortune-park-seri-kembangan-hbsiqbma",
+        "url_slug": "fortune-park-seri-kembangan-hbsiqbma",
+        "lat": 3.0366619,
+        "lng": 101.7068768
+      },
+      {
+        "title": "Mutiara Residence Serdang, Seri Kembangan",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 899,
+        "url": "https://speedhome.com/details/mutiara-residence-serdang-seri-kembangan-ozlowxtz",
+        "url_slug": "mutiara-residence-serdang-seri-kembangan-ozlowxtz",
+        "lat": 3.0179143,
+        "lng": 101.7076251
+      },
+      {
+        "title": "LBS SKYLAKE RESIDENCE",
+        "sqft": 1060,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/lbs-skylake-residence-fmucfbsi",
+        "url_slug": "lbs-skylake-residence-fmucfbsi",
+        "lat": 2.9485216724547394,
+        "lng": 101.61601540816598
+      },
+      {
+        "title": "Vista Millennium Condominium",
+        "sqft": 850,
+        "bedrooms": 3,
+        "price_month": 1200,
+        "url": "https://speedhome.com/details/vista-millennium-condominium-lzbdqqfm",
+        "url_slug": "vista-millennium-condominium-lzbdqqfm",
+        "lat": 3.0034165161,
+        "lng": 101.6018682718
+      },
+      {
+        "title": "Vista Lavender Apartment, Puchong",
+        "sqft": 900,
+        "bedrooms": 3,
+        "price_month": 1200,
+        "url": "https://speedhome.com/details/vista-lavender-apartment-puchong-aiajoomm",
+        "url_slug": "vista-lavender-apartment-puchong-aiajoomm",
+        "lat": 3.0610834258821957,
+        "lng": 101.64057090666485
+      },
+      {
+        "title": "Twinz Residences, Bandar Puchong Jaya",
+        "sqft": 900,
+        "bedrooms": 3,
+        "price_month": 1550,
+        "url": "https://speedhome.com/details/twinz-residences-bandar-puchong-jaya-xinehmbn",
+        "url_slug": "twinz-residences-bandar-puchong-jaya-xinehmbn",
+        "lat": 3.0713956312413613,
+        "lng": 101.62372877553253
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Puchong",
+      "radius_km": 12.0,
+      "target_lat": 3.0179143,
+      "target_lng": 101.625841856,
+      "geocode_succeeded": false,
+      "total_before": 120,
+      "total_after": 27,
+      "dropped_no_coords": 84,
+      "dropped_out_of_radius": 9
+    }
+  ]
+}

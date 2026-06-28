@@ -1,0 +1,359 @@
+{
+  "slug": "cheras",
+  "units": [
+    [
+      {
+        "title": "28 Boulevard (28 BLVD), Kuala Lumpur",
+        "sqft": 450,
+        "bedrooms": 1,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/28-boulevard-28-blvd-kuala-lumpur-swypmkhx",
+        "url_slug": "28-boulevard-28-blvd-kuala-lumpur-swypmkhx",
+        "lat": 3.139003,
+        "lng": 101.686855
+      },
+      {
+        "title": "Armani Residence, Selangor.",
+        "sqft": 200,
+        "bedrooms": 1,
+        "price_month": 950,
+        "url": "https://speedhome.com/details/armani-residence-selangor-izwjprbc",
+        "url_slug": "armani-residence-selangor-izwjprbc",
+        "lat": 3.031588248094941,
+        "lng": 101.79191843694426
+      },
+      {
+        "title": "Seri Kembangan",
+        "sqft": 1800,
+        "bedrooms": 3,
+        "price_month": 2800,
+        "url": "https://speedhome.com/details/seri-kembangan-lmvbqwrm",
+        "url_slug": "seri-kembangan-lmvbqwrm",
+        "lat": 3.1572869968569424,
+        "lng": 101.71167450894322
+      },
+      {
+        "title": "Permata Residence, Kajang",
+        "sqft": 1045,
+        "bedrooms": 3,
+        "price_month": 1200,
+        "url": "https://speedhome.com/details/permata-residence-kajang-vbkoaegt",
+        "url_slug": "permata-residence-kajang-vbkoaegt",
+        "lat": 3.029171336909841,
+        "lng": 101.78689092108581
+      },
+      {
+        "title": "Residensi Jubilee, Bukit Bintang",
+        "sqft": 814,
+        "bedrooms": 3,
+        "price_month": 2300,
+        "url": "https://speedhome.com/details/residensi-jubilee-bukit-bintang-tuczqrbx",
+        "url_slug": "residensi-jubilee-bukit-bintang-tuczqrbx",
+        "lat": 3.1309118,
+        "lng": 101.709275
+      },
+      {
+        "title": "Skyline, Kuala Lumpur",
+        "sqft": 1080,
+        "bedrooms": 4,
+        "price_month": 5000,
+        "url": "https://speedhome.com/details/skyline-kuala-lumpur-upwsrrqt",
+        "url_slug": "skyline-kuala-lumpur-upwsrrqt",
+        "lat": 3.1335139300106456,
+        "lng": 101.71248945301186
+      },
+      {
+        "title": "Taman Taming Mutiara, Kajang",
+        "sqft": 3694,
+        "bedrooms": 7,
+        "price_month": 5400,
+        "url": "https://speedhome.com/details/taman-taming-mutiara-kajang-nhtzdaey",
+        "url_slug": "taman-taming-mutiara-kajang-nhtzdaey",
+        "lat": 3.05984912404942,
+        "lng": 101.80701836285043
+      },
+      {
+        "title": "Residensi Amansuri City Sentral, Kuala Lumpur",
+        "sqft": 900,
+        "bedrooms": 3,
+        "price_month": 1750,
+        "url": "https://speedhome.com/details/residensi-amansuri-city-sentral-kuala-lumpur-raapqhnf",
+        "url_slug": "residensi-amansuri-city-sentral-kuala-lumpur-raapqhnf",
+        "lat": 3.0998859395973914,
+        "lng": 101.70679024041532
+      },
+      {
+        "title": "Vista Pinggiran, Seri Kembangan",
+        "sqft": 815,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/vista-pinggiran-seri-kembangan-rfigaskp",
+        "url_slug": "vista-pinggiran-seri-kembangan-rfigaskp",
+        "lat": 2.9929059344,
+        "lng": 101.6776621342
+      },
+      {
+        "title": "Damai Vista Condominium, Cheras",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 700,
+        "url": "https://speedhome.com/details/damai-vista-condominium-cheras-onaqmgpf",
+        "url_slug": "damai-vista-condominium-cheras-onaqmgpf",
+        "lat": 3.051531556651112,
+        "lng": 101.74391518751509
+      },
+      {
+        "title": "Villa Tropika, Cheras",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 600,
+        "url": "https://speedhome.com/details/villa-tropika-cheras-tjlcqwdj",
+        "url_slug": "villa-tropika-cheras-tjlcqwdj",
+        "lat": 3.1186512074,
+        "lng": 101.7307591438
+      },
+      {
+        "title": "Residensi PR1MA Alam Damai, Kuala Lumpur",
+        "sqft": 995,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/residensi-pr1ma-alam-damai-kuala-lumpur-rdlcoplg",
+        "url_slug": "residensi-pr1ma-alam-damai-kuala-lumpur-rdlcoplg",
+        "lat": 3.0568987,
+        "lng": 101.7419504
+      },
+      {
+        "title": "Aster Residence, Cheras Hartamas",
+        "sqft": 650,
+        "bedrooms": 2,
+        "price_month": 3400,
+        "url": "https://speedhome.com/details/aster-residence-cheras-hartamas-tzyvaoli",
+        "url_slug": "aster-residence-cheras-hartamas-tzyvaoli",
+        "lat": 3.0806936035425947,
+        "lng": 101.74564106726822
+      },
+      {
+        "title": "Landmark Residence 1, Kajang",
+        "sqft": 1200,
+        "bedrooms": 3,
+        "price_month": 1780,
+        "url": "https://speedhome.com/details/landmark-residence-1-kajang-bkjhwbyv",
+        "url_slug": "landmark-residence-1-kajang-bkjhwbyv",
+        "lat": 3.0363706181826835,
+        "lng": 101.77276390441583
+      },
+      {
+        "title": "M Vertica KL City Residences",
+        "sqft": null,
+        "bedrooms": "SMALL",
+        "price_month": 760,
+        "url": "https://speedhome.com/details/m-vertica-kl-city-residences-jufjanzz",
+        "url_slug": "m-vertica-kl-city-residences-jufjanzz",
+        "lat": 3.118604865980843,
+        "lng": 101.72659440756229
+      },
+      {
+        "title": "28 Boulevard, Pandan Perdana",
+        "sqft": 450,
+        "bedrooms": 2,
+        "price_month": 1900,
+        "url": "https://speedhome.com/details/28-boulevard-pandan-perdana-pdiftemv",
+        "url_slug": "28-boulevard-pandan-perdana-pdiftemv",
+        "lat": 3.1178048843,
+        "lng": 101.7421102524
+      },
+      {
+        "title": "One Cochrane Residences, Kuala Lumpur",
+        "sqft": 980,
+        "bedrooms": 2,
+        "price_month": 3500,
+        "url": "https://speedhome.com/details/one-cochrane-residences-kuala-lumpur-teopaeyz",
+        "url_slug": "one-cochrane-residences-kuala-lumpur-teopaeyz",
+        "lat": 3.133509272056827,
+        "lng": 101.7208633
+      },
+      {
+        "title": "Penthouse unit Bukit Pandan 1 Condominium B",
+        "sqft": 2100,
+        "bedrooms": 6,
+        "price_month": 1980,
+        "url": "https://speedhome.com/details/penthouse-unit-bukit-pandan-1-condominium-b-hrcepxxk",
+        "url_slug": "penthouse-unit-bukit-pandan-1-condominium-b-hrcepxxk",
+        "lat": 3.1147302616,
+        "lng": 101.7378616333
+      },
+      {
+        "title": "Symphony Tower, Seri Kembangan",
+        "sqft": 1144,
+        "bedrooms": 3,
+        "price_month": 2300,
+        "url": "https://speedhome.com/details/symphony-tower-seri-kembangan-ypgcxyft",
+        "url_slug": "symphony-tower-seri-kembangan-ypgcxyft",
+        "lat": 3.0274158335,
+        "lng": 101.7545932531
+      },
+      {
+        "title": "Green Terrain, Cheras South",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 600,
+        "url": "https://speedhome.com/details/green-terrain-cheras-south-rzkwmmgo",
+        "url_slug": "green-terrain-cheras-south-rzkwmmgo",
+        "lat": 3.0727023797,
+        "lng": 101.7580962181
+      },
+      {
+        "title": "Angkasa Condominiums, Cheras",
+        "sqft": 920,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/angkasa-condominiums-cheras-yagaodhr",
+        "url_slug": "angkasa-condominiums-cheras-yagaodhr",
+        "lat": 3.079280394,
+        "lng": 101.7302387953
+      },
+      {
+        "title": "The Holmes 2, Bandar Tun Razak",
+        "sqft": 943,
+        "bedrooms": 3,
+        "price_month": 2600,
+        "url": "https://speedhome.com/details/the-holmes-2-bandar-tun-razak-igvuynhs",
+        "url_slug": "the-holmes-2-bandar-tun-razak-igvuynhs",
+        "lat": 3.0887295227,
+        "lng": 101.7206740379
+      },
+      {
+        "title": "One Cochrane Residences, Kuala Lumpur",
+        "sqft": 947,
+        "bedrooms": 2,
+        "price_month": 3800,
+        "url": "https://speedhome.com/details/one-cochrane-residences-kuala-lumpur-wqkyqexr",
+        "url_slug": "one-cochrane-residences-kuala-lumpur-wqkyqexr",
+        "lat": 3.133509272056827,
+        "lng": 101.7208633
+      },
+      {
+        "title": "East Lake Residence, Seri Kembangan",
+        "sqft": null,
+        "bedrooms": "SMALL",
+        "price_month": 650,
+        "url": "https://speedhome.com/details/east-lake-residence-seri-kembangan-cewrvojo",
+        "url_slug": "east-lake-residence-seri-kembangan-cewrvojo",
+        "lat": 3.033233,
+        "lng": 101.70707
+      },
+      {
+        "title": "Residensi Bukit PALMA 1",
+        "sqft": 1080,
+        "bedrooms": 3,
+        "price_month": 1700,
+        "url": "https://speedhome.com/details/residensi-bukit-palma-1-vvqkdeiu",
+        "url_slug": "residensi-bukit-palma-1-vvqkdeiu",
+        "lat": 3.0250549,
+        "lng": 101.8056402
+      },
+      {
+        "title": "Green Terrain, Cheras South",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 600,
+        "url": "https://speedhome.com/details/green-terrain-cheras-south-otilkvya",
+        "url_slug": "green-terrain-cheras-south-otilkvya",
+        "lat": 3.0727023797,
+        "lng": 101.7580962181
+      },
+      {
+        "title": "Amaya Maluri, Cheras",
+        "sqft": 920,
+        "bedrooms": 2,
+        "price_month": 2600,
+        "url": "https://speedhome.com/details/amaya-maluri-cheras-sjfylggt",
+        "url_slug": "amaya-maluri-cheras-sjfylggt",
+        "lat": 3.1273862,
+        "lng": 101.7295977
+      },
+      {
+        "title": "Garden One South",
+        "sqft": 1065,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/garden-one-south-pzzctxtt",
+        "url_slug": "garden-one-south-pzzctxtt",
+        "lat": 3.037039450034084,
+        "lng": 101.70769642601385
+      },
+      {
+        "title": "Green Park, Seri Kembangan , Serdang, Tanming Jaya, Taman Balakong Jaya",
+        "sqft": null,
+        "bedrooms": "SMALL",
+        "price_month": 400,
+        "url": "https://speedhome.com/details/green-park-seri-kembangan-serdang-tanming-jaya-taman-balakong-jaya-ocxrqqou",
+        "url_slug": "green-park-seri-kembangan-serdang-tanming-jaya-taman-balakong-jaya-ocxrqqou",
+        "lat": 3.002414416121645,
+        "lng": 101.73311820682684
+      },
+      {
+        "title": "Fortune Park, Seri Kembangan",
+        "sqft": null,
+        "bedrooms": "SMALL",
+        "price_month": 3980,
+        "url": "https://speedhome.com/details/fortune-park-seri-kembangan-kndevdzo",
+        "url_slug": "fortune-park-seri-kembangan-kndevdzo",
+        "lat": 3.0365529,
+        "lng": 101.7069474
+      },
+      {
+        "title": "Fortune Park, Seri Kembangan",
+        "sqft": 970,
+        "bedrooms": 3,
+        "price_month": 3790,
+        "url": "https://speedhome.com/details/fortune-park-seri-kembangan-bdrfjthe",
+        "url_slug": "fortune-park-seri-kembangan-bdrfjthe",
+        "lat": 3.0365654336,
+        "lng": 101.7069196701
+      },
+      {
+        "title": "Fortune Park, Seri Kembangan",
+        "sqft": 920,
+        "bedrooms": 3,
+        "price_month": 1500,
+        "url": "https://speedhome.com/details/fortune-park-seri-kembangan-gcyemptl",
+        "url_slug": "fortune-park-seri-kembangan-gcyemptl",
+        "lat": 3.0365529,
+        "lng": 101.7069474
+      },
+      {
+        "title": "Silk Sky, Balakong",
+        "sqft": 484,
+        "bedrooms": 0,
+        "price_month": 1400,
+        "url": "https://speedhome.com/details/silk-sky-balakong-auhgujju",
+        "url_slug": "silk-sky-balakong-auhgujju",
+        "lat": 3.027086,
+        "lng": 101.750595
+      },
+      {
+        "title": "Pangsapuri Cemara, Cheras",
+        "sqft": 650,
+        "bedrooms": 3,
+        "price_month": 850,
+        "url": "https://speedhome.com/details/pangsapuri-cemara-cheras-kmcrapfm",
+        "url_slug": "pangsapuri-cemara-cheras-kmcrapfm",
+        "lat": 3.1018090591004066,
+        "lng": 101.70847228072665
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Cheras",
+      "radius_km": 12.0,
+      "target_lat": 3.0727023797,
+      "target_lng": 101.7295977,
+      "geocode_succeeded": false,
+      "total_before": 104,
+      "total_after": 34,
+      "dropped_no_coords": 68,
+      "dropped_out_of_radius": 2
+    }
+  ]
+}

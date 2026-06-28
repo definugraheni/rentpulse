@@ -1,0 +1,139 @@
+{
+  "slug": "sri-hartamas",
+  "units": [
+    [
+      {
+        "title": "Taman Sri Segambut, Kuala Lumpur",
+        "sqft": null,
+        "bedrooms": "SMALL",
+        "price_month": 440,
+        "url": "https://speedhome.com/details/taman-sri-segambut-kuala-lumpur-pauqzool",
+        "url_slug": "taman-sri-segambut-kuala-lumpur-pauqzool",
+        "lat": 3.195986811229107,
+        "lng": 101.65817988650818
+      },
+      {
+        "title": "Laman Suria, Mont Kiara",
+        "sqft": 1034,
+        "bedrooms": 2,
+        "price_month": 2900,
+        "url": "https://speedhome.com/details/laman-suria-mont-kiara-uhqvfmfj",
+        "url_slug": "laman-suria-mont-kiara-uhqvfmfj",
+        "lat": 3.16881,
+        "lng": 101.65
+      },
+      {
+        "title": "Bukit Damansara, Damansara Heights",
+        "sqft": 2500,
+        "bedrooms": 4,
+        "price_month": 8500,
+        "url": "https://speedhome.com/details/bukit-damansara-damansara-heights-wfvyjwdp",
+        "url_slug": "bukit-damansara-damansara-heights-wfvyjwdp",
+        "lat": 3.1520966609,
+        "lng": 101.6566183604
+      },
+      {
+        "title": "28 Boulevard (28 BLVD), Kuala Lumpur",
+        "sqft": 450,
+        "bedrooms": 1,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/28-boulevard-28-blvd-kuala-lumpur-swypmkhx",
+        "url_slug": "28-boulevard-28-blvd-kuala-lumpur-swypmkhx",
+        "lat": 3.139003,
+        "lng": 101.686855
+      },
+      {
+        "title": "The ERA, Segambut",
+        "sqft": 280,
+        "bedrooms": 1,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/the-era-segambut-dsfsvhfe",
+        "url_slug": "the-era-segambut-dsfsvhfe",
+        "lat": 3.1819735165,
+        "lng": 101.6753232479
+      },
+      {
+        "title": "Taman Sri Segambut, Kuala Lumpur",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 450,
+        "url": "https://speedhome.com/details/taman-sri-segambut-kuala-lumpur-vfgizhcq",
+        "url_slug": "taman-sri-segambut-kuala-lumpur-vfgizhcq",
+        "lat": 3.195986811229107,
+        "lng": 101.65817988650818
+      },
+      {
+        "title": "Riana dutamas savio",
+        "sqft": 904,
+        "bedrooms": 2,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/riana-dutamas-savio-sraetfwb",
+        "url_slug": "riana-dutamas-savio-sraetfwb",
+        "lat": 3.1854116383,
+        "lng": 101.6672234233
+      },
+      {
+        "title": "Taman Sri Segambut, Kuala Lumpur",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 700,
+        "url": "https://speedhome.com/details/taman-sri-segambut-kuala-lumpur-bkaenyrb",
+        "url_slug": "taman-sri-segambut-kuala-lumpur-bkaenyrb",
+        "lat": 3.195986811229107,
+        "lng": 101.65817988650818
+      },
+      {
+        "title": "Puncak Damansara Condominium, Petaling Jaya",
+        "sqft": 1114,
+        "bedrooms": 3,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/puncak-damansara-condominium-petaling-jaya-rjoceeev",
+        "url_slug": "puncak-damansara-condominium-petaling-jaya-rjoceeev",
+        "lat": 3.136711697943813,
+        "lng": 101.61615644602786
+      },
+      {
+        "title": "Metropolitan Square, Petaling Jaya",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 700,
+        "url": "https://speedhome.com/details/metropolitan-square-petaling-jaya-mumeecbh",
+        "url_slug": "metropolitan-square-petaling-jaya-mumeecbh",
+        "lat": 3.166476633979268,
+        "lng": 101.60914519151862
+      },
+      {
+        "title": "United Point Residence, Segambut",
+        "sqft": 958,
+        "bedrooms": 3,
+        "price_month": 3500,
+        "url": "https://speedhome.com/details/united-point-residence-segambut-jisissyx",
+        "url_slug": "united-point-residence-segambut-jisissyx",
+        "lat": 3.1918287809,
+        "lng": 101.6535115242
+      },
+      {
+        "title": "Metropolitan Square Condominium, Petaling Jaya",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 700,
+        "url": "https://speedhome.com/details/metropolitan-square-condominium-petaling-jaya-qyldjddq",
+        "url_slug": "metropolitan-square-condominium-petaling-jaya-qyldjddq",
+        "lat": 3.166476633979268,
+        "lng": 101.60914519151862
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Sri Hartamas",
+      "radius_km": 12.0,
+      "target_lat": 3.1819735165,
+      "target_lng": 101.65817988650818,
+      "geocode_succeeded": false,
+      "total_before": 40,
+      "total_after": 12,
+      "dropped_no_coords": 28,
+      "dropped_out_of_radius": 0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "bukit-damansara",
+  "units": [
+    [
+      {
+        "title": "Bukit Damansara, Damansara Heights",
+        "sqft": 2500,
+        "bedrooms": 4,
+        "price_month": 8500,
+        "url": "https://speedhome.com/details/bukit-damansara-damansara-heights-wfvyjwdp",
+        "url_slug": "bukit-damansara-damansara-heights-wfvyjwdp",
+        "lat": 3.1520966609,
+        "lng": 101.6566183604
+      }
+    ],
+    {
+      "method": "none_insufficient_data",
+      "area_name": "Bukit Damansara",
+      "radius_km": 12.0,
+      "target_lat": null,
+      "target_lng": null,
+      "geocode_succeeded": false,
+      "total_before": 1,
+      "total_after": 1,
+      "dropped_no_coords": 0,
+      "dropped_out_of_radius": 0
+    }
+  ]
+}

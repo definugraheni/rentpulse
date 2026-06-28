@@ -1,0 +1,309 @@
+{
+  "slug": "cyberjaya",
+  "units": [
+    [
+      {
+        "title": "Alanis Residence, Sepang",
+        "sqft": 860,
+        "bedrooms": 3,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/alanis-residence-sepang-fvirhmrl",
+        "url_slug": "alanis-residence-sepang-fvirhmrl",
+        "lat": 2.819504870236389,
+        "lng": 101.69598289161937
+      },
+      {
+        "title": "Mutiara Ville Residence, Cyberjaya",
+        "sqft": 450,
+        "bedrooms": 0,
+        "price_month": 800,
+        "url": "https://speedhome.com/details/mutiara-ville-residence-cyberjaya-rpkohxay",
+        "url_slug": "mutiara-ville-residence-cyberjaya-rpkohxay",
+        "lat": 2.923798292479192,
+        "lng": 101.63245217129054
+      },
+      {
+        "title": "Third Avenue, Cyberjaya",
+        "sqft": 780,
+        "bedrooms": 2,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/third-avenue-cyberjaya-gvjmrfwq",
+        "url_slug": "third-avenue-cyberjaya-gvjmrfwq",
+        "lat": 2.9287474281,
+        "lng": 101.6541337967
+      },
+      {
+        "title": "Residensi Bukit Tiara",
+        "sqft": 1000,
+        "bedrooms": 4,
+        "price_month": 1900,
+        "url": "https://speedhome.com/details/residensi-bukit-tiara-nsqwjeig",
+        "url_slug": "residensi-bukit-tiara-nsqwjeig",
+        "lat": 2.9368692341,
+        "lng": 101.7982435226
+      },
+      {
+        "title": "Lakefront Homes, Cyberjaya",
+        "sqft": 1010,
+        "bedrooms": 3,
+        "price_month": 1900,
+        "url": "https://speedhome.com/details/lakefront-homes-cyberjaya-rtzxzhjm",
+        "url_slug": "lakefront-homes-cyberjaya-rtzxzhjm",
+        "lat": 2.9286831391867008,
+        "lng": 101.6323059797287
+      },
+      {
+        "title": "Taman Emas, Dengkil",
+        "sqft": 1892,
+        "bedrooms": 4,
+        "price_month": 2800,
+        "url": "https://speedhome.com/details/taman-emas-dengkil-jzlcuhiy",
+        "url_slug": "taman-emas-dengkil-jzlcuhiy",
+        "lat": 2.8666886635,
+        "lng": 101.6778658752
+      },
+      {
+        "title": "Lakefront Homes, Cyberjaya",
+        "sqft": 850,
+        "bedrooms": 3,
+        "price_month": 1500,
+        "url": "https://speedhome.com/details/lakefront-homes-cyberjaya-qkgxyfya",
+        "url_slug": "lakefront-homes-cyberjaya-qkgxyfya",
+        "lat": 2.9286831391867008,
+        "lng": 101.6323059797287
+      },
+      {
+        "title": "Taman Ruby Dengkil",
+        "sqft": 14000,
+        "bedrooms": 4,
+        "price_month": 2800,
+        "url": "https://speedhome.com/details/taman-ruby-dengkil-pxitfnpt",
+        "url_slug": "taman-ruby-dengkil-pxitfnpt",
+        "lat": 2.8636637188,
+        "lng": 101.6791534424
+      },
+      {
+        "title": "The Olive, Sepang",
+        "sqft": 818,
+        "bedrooms": 3,
+        "price_month": 1850,
+        "url": "https://speedhome.com/details/the-olive-sepang-mprappgc",
+        "url_slug": "the-olive-sepang-mprappgc",
+        "lat": 2.8380749671,
+        "lng": 101.7018556595
+      },
+      {
+        "title": "Seni Residences, Sepang, Sunsuria City",
+        "sqft": 2578,
+        "bedrooms": 4,
+        "price_month": 4400,
+        "url": "https://speedhome.com/details/seni-residences-sepang-sunsuria-city-xetkkond",
+        "url_slug": "seni-residences-sepang-sunsuria-city-xetkkond",
+        "lat": 2.8298652904719703,
+        "lng": 101.69837017232753
+      },
+      {
+        "title": "Bayu Parkville, Balakong",
+        "sqft": 1000,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/bayu-parkville-balakong-lavmsbqn",
+        "url_slug": "bayu-parkville-balakong-lavmsbqn",
+        "lat": 3.0079485705,
+        "lng": 101.7363649607
+      },
+      {
+        "title": "Cyberia SmartHomes, Cyberjaya",
+        "sqft": 2098,
+        "bedrooms": 5,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/cyberia-smarthomes-cyberjaya-selpawru",
+        "url_slug": "cyberia-smarthomes-cyberjaya-selpawru",
+        "lat": 2.924547,
+        "lng": 101.639113
+      },
+      {
+        "title": "Kita Bayu, Dengkil",
+        "sqft": 1483,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/kita-bayu-dengkil-xaneiyfl",
+        "url_slug": "kita-bayu-dengkil-xaneiyfl",
+        "lat": 2.875037313192444,
+        "lng": 101.64907507242322
+      },
+      {
+        "title": "Lake Point Residence, Cyberjaya",
+        "sqft": 969,
+        "bedrooms": 3,
+        "price_month": 2500,
+        "url": "https://speedhome.com/details/lake-point-residence-cyberjaya-zhwcnpoq",
+        "url_slug": "lake-point-residence-cyberjaya-zhwcnpoq",
+        "lat": 2.9295403247,
+        "lng": 101.6346931458
+      },
+      {
+        "title": "Sunsuria Tangerine Suites, Sepang",
+        "sqft": 700,
+        "bedrooms": 3,
+        "price_month": 2250,
+        "url": "https://speedhome.com/details/sunsuria-tangerine-suites-sepang-fmjiklrq",
+        "url_slug": "sunsuria-tangerine-suites-sepang-fmjiklrq",
+        "lat": 2.836789719101648,
+        "lng": 101.69637887491636
+      },
+      {
+        "title": "Cerrado Southville City, Dengkil",
+        "sqft": 656,
+        "bedrooms": 2,
+        "price_month": 1250,
+        "url": "https://speedhome.com/details/cerrado-southville-city-dengkil-yxgatred",
+        "url_slug": "cerrado-southville-city-dengkil-yxgatred",
+        "lat": 2.9019223986515907,
+        "lng": 101.766602510676
+      },
+      {
+        "title": "Ceria Condominium",
+        "sqft": 1000,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/ceria-condominium-cmgquxug",
+        "url_slug": "ceria-condominium-cmgquxug",
+        "lat": 2.9238966,
+        "lng": 101.6323136
+      },
+      {
+        "title": "Kitabayu High",
+        "sqft": 1650,
+        "bedrooms": 3,
+        "price_month": 1600,
+        "url": "https://speedhome.com/details/kitabayu-high-osrmezro",
+        "url_slug": "kitabayu-high-osrmezro",
+        "lat": 2.873237870126087,
+        "lng": 101.6508590666604
+      },
+      {
+        "title": "Adelia Residensi",
+        "sqft": 1091,
+        "bedrooms": 3,
+        "price_month": 1500,
+        "url": "https://speedhome.com/details/adelia-residensi-ecbwpaia",
+        "url_slug": "adelia-residensi-ecbwpaia",
+        "lat": 2.907676405871887,
+        "lng": 101.80019185048936
+      },
+      {
+        "title": "Mirage By The Lake, Cyberjaya",
+        "sqft": 1060,
+        "bedrooms": 2,
+        "price_month": 1900,
+        "url": "https://speedhome.com/details/mirage-by-the-lake-cyberjaya-qperimys",
+        "url_slug": "mirage-by-the-lake-cyberjaya-qperimys",
+        "lat": 2.9148073574,
+        "lng": 101.6653615236
+      },
+      {
+        "title": "Acacia Residences, Sepang",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 715,
+        "url": "https://speedhome.com/details/acacia-residences-sepang-bfaipqsp",
+        "url_slug": "acacia-residences-sepang-bfaipqsp",
+        "lat": 2.8347949434853525,
+        "lng": 101.73857474218185
+      },
+      {
+        "title": "Dpulze Residence, Cyberjaya",
+        "sqft": 558,
+        "bedrooms": 1,
+        "price_month": 1480,
+        "url": "https://speedhome.com/details/dpulze-residence-cyberjaya-gkpzjhyp",
+        "url_slug": "dpulze-residence-cyberjaya-gkpzjhyp",
+        "lat": 2.922303965568025,
+        "lng": 101.65034929695894
+      },
+      {
+        "title": "Sfera Residency, Seri Kembangan",
+        "sqft": 996,
+        "bedrooms": 3,
+        "price_month": 2700,
+        "url": "https://speedhome.com/details/sfera-residency-seri-kembangan-tatpfahu",
+        "url_slug": "sfera-residency-seri-kembangan-tatpfahu",
+        "lat": 2.982561,
+        "lng": 101.663318
+      },
+      {
+        "title": "Sri Lavender Apartment, Kajang",
+        "sqft": 1045,
+        "bedrooms": 3,
+        "price_month": 1300,
+        "url": "https://speedhome.com/details/sri-lavender-apartment-kajang-eplbvmwy",
+        "url_slug": "sri-lavender-apartment-kajang-eplbvmwy",
+        "lat": 2.9753398597,
+        "lng": 101.7838481069
+      },
+      {
+        "title": "Tangerine Suites, Sunsuria City",
+        "sqft": 635,
+        "bedrooms": 2,
+        "price_month": 1680,
+        "url": "https://speedhome.com/details/tangerine-suites-sunsuria-city-epwutimg",
+        "url_slug": "tangerine-suites-sunsuria-city-epwutimg",
+        "lat": 2.836789719101648,
+        "lng": 101.69637887491636
+      },
+      {
+        "title": "Centrus SoHo 1, Cyberjaya",
+        "sqft": 800,
+        "bedrooms": 2,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/centrus-soho-1-cyberjaya-hpagxkjs",
+        "url_slug": "centrus-soho-1-cyberjaya-hpagxkjs",
+        "lat": 2.9252651054,
+        "lng": 101.6500246525
+      },
+      {
+        "title": "Edusphere, Cyberjaya",
+        "sqft": 450,
+        "bedrooms": 1,
+        "price_month": 1300,
+        "url": "https://speedhome.com/details/edusphere-cyberjaya-ooxxpwvh",
+        "url_slug": "edusphere-cyberjaya-ooxxpwvh",
+        "lat": 2.9320013763204384,
+        "lng": 101.63732706672518
+      },
+      {
+        "title": "Vista Bangi Condominium",
+        "sqft": 1000,
+        "bedrooms": 3,
+        "price_month": 2500,
+        "url": "https://speedhome.com/details/vista-bangi-condominium-clelwvst",
+        "url_slug": "vista-bangi-condominium-clelwvst",
+        "lat": 2.9453856304884694,
+        "lng": 101.7847572476079
+      },
+      {
+        "title": "3 Elements Seri Kembangan",
+        "sqft": 531,
+        "bedrooms": 1,
+        "price_month": 1400,
+        "url": "https://speedhome.com/details/3-elements-seri-kembangan-mrhwbycv",
+        "url_slug": "3-elements-seri-kembangan-mrhwbycv",
+        "lat": 2.9832216916126395,
+        "lng": 101.66736260683635
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Cyberjaya",
+      "radius_km": 12.0,
+      "target_lat": 2.9252651054,
+      "target_lng": 101.69598289161937,
+      "geocode_succeeded": false,
+      "total_before": 120,
+      "total_after": 29,
+      "dropped_no_coords": 84,
+      "dropped_out_of_radius": 7
+    }
+  ]
+}

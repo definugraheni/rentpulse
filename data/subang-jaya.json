@@ -1,0 +1,139 @@
+{
+  "slug": "subang-jaya",
+  "units": [
+    [
+      {
+        "title": "Sunway Geolake Residences",
+        "sqft": 1001,
+        "bedrooms": 3,
+        "price_month": 6500,
+        "url": "https://speedhome.com/details/sunway-geolake-residences-dwsxsusf",
+        "url_slug": "sunway-geolake-residences-dwsxsusf",
+        "lat": 3.0639816272,
+        "lng": 101.6087722778
+      },
+      {
+        "title": "Double Storey Townhouse",
+        "sqft": 1000,
+        "bedrooms": 2,
+        "price_month": 2200,
+        "url": "https://speedhome.com/details/double-storey-townhouse-ziajbpsx",
+        "url_slug": "double-storey-townhouse-ziajbpsx",
+        "lat": 2.992372642571668,
+        "lng": 101.54016925140333
+      },
+      {
+        "title": "SS12, Subang Jaya",
+        "sqft": 1800,
+        "bedrooms": 3,
+        "price_month": 2100,
+        "url": "https://speedhome.com/details/ss12-subang-jaya-hwpxnypk",
+        "url_slug": "ss12-subang-jaya-hwpxnypk",
+        "lat": 3.0787902,
+        "lng": 101.5949156
+      },
+      {
+        "title": "USJ 2, Subang Jaya",
+        "sqft": null,
+        "bedrooms": "SMALL",
+        "price_month": 460,
+        "url": "https://speedhome.com/details/usj-2-subang-jaya-gxzxuhkk",
+        "url_slug": "usj-2-subang-jaya-gxzxuhkk",
+        "lat": 3.060639,
+        "lng": 101.585898
+      },
+      {
+        "title": "Goodyear Court 1",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 600,
+        "url": "https://speedhome.com/details/goodyear-court-1-hvqztekp",
+        "url_slug": "goodyear-court-1-hvqztekp",
+        "lat": 3.060639,
+        "lng": 101.585898
+      },
+      {
+        "title": "Taman Alam Megah, Shah Alam",
+        "sqft": 798,
+        "bedrooms": 3,
+        "price_month": 1300,
+        "url": "https://speedhome.com/details/taman-alam-megah-shah-alam-xjhajhsg",
+        "url_slug": "taman-alam-megah-shah-alam-xjhajhsg",
+        "lat": 3.10788319098835,
+        "lng": 101.60336709672929
+      },
+      {
+        "title": "Saujana Residency, Subang Jaya",
+        "sqft": 1360,
+        "bedrooms": 2,
+        "price_month": 3300,
+        "url": "https://speedhome.com/details/saujana-residency-subang-jaya-jkjmodwd",
+        "url_slug": "saujana-residency-subang-jaya-jkjmodwd",
+        "lat": 3.0831800446,
+        "lng": 101.5845626593
+      },
+      {
+        "title": "Southplace Residences, Tropicana Metropark",
+        "sqft": 700,
+        "bedrooms": 2,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/southplace-residences-tropicana-metropark-kuuanrnd",
+        "url_slug": "southplace-residences-tropicana-metropark-kuuanrnd",
+        "lat": 3.0703547760903414,
+        "lng": 101.56384626666126
+      },
+      {
+        "title": "NEW Internediate Fully Furnished Room For Rent @ SS15, Subang Jaya",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 650,
+        "url": "https://speedhome.com/details/new-internediate-fully-furnished-room-for-rent-ss15-subang-jaya-yzsvebxj",
+        "url_slug": "new-internediate-fully-furnished-room-for-rent-ss15-subang-jaya-yzsvebxj",
+        "lat": 3.079322,
+        "lng": 101.587194
+      },
+      {
+        "title": "Bungaraya Condominium, Shah Alam",
+        "sqft": 1378,
+        "bedrooms": 3,
+        "price_month": 2700,
+        "url": "https://speedhome.com/details/bungaraya-condominium-shah-alam-vijjpfjb",
+        "url_slug": "bungaraya-condominium-shah-alam-vijjpfjb",
+        "lat": 3.111730621,
+        "lng": 101.5720528364
+      },
+      {
+        "title": "Embayu Damansara West, Subang Bestari",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 800,
+        "url": "https://speedhome.com/details/embayu-damansara-west-subang-bestari-ygeuyiwu",
+        "url_slug": "embayu-damansara-west-subang-bestari-ygeuyiwu",
+        "lat": 3.1646922502553907,
+        "lng": 101.54443783909818
+      },
+      {
+        "title": "Lagoon Perdana Apartment, Petaling Jaya",
+        "sqft": 852,
+        "bedrooms": 3,
+        "price_month": 1300,
+        "url": "https://speedhome.com/details/lagoon-perdana-apartment-petaling-jaya-cqilncao",
+        "url_slug": "lagoon-perdana-apartment-petaling-jaya-cqilncao",
+        "lat": 3.061956439194271,
+        "lng": 101.61158826202156
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Subang Jaya",
+      "radius_km": 12.0,
+      "target_lat": 3.0787902,
+      "target_lng": 101.585898,
+      "geocode_succeeded": false,
+      "total_before": 38,
+      "total_after": 12,
+      "dropped_no_coords": 26,
+      "dropped_out_of_radius": 0
+    }
+  ]
+}

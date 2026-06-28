@@ -1,0 +1,279 @@
+{
+  "slug": "ttdi",
+  "units": [
+    [
+      {
+        "title": "D'Quince, Damansara Perdana",
+        "sqft": 550,
+        "bedrooms": 2,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/d-quince-damansara-perdana-boynwxch",
+        "url_slug": "d-quince-damansara-perdana-boynwxch",
+        "lat": 3.118041,
+        "lng": 101.616946
+      },
+      {
+        "title": "Arnica Serviced Residences, Petaling Jaya",
+        "sqft": 597,
+        "bedrooms": 1,
+        "price_month": 3000,
+        "url": "https://speedhome.com/details/arnica-serviced-residences-petaling-jaya-rqdelarh",
+        "url_slug": "arnica-serviced-residences-petaling-jaya-rqdelarh",
+        "lat": 3.149214799,
+        "lng": 101.5932369232
+      },
+      {
+        "title": "Metropolitan Square, Petaling Jaya",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 700,
+        "url": "https://speedhome.com/details/metropolitan-square-petaling-jaya-mumeecbh",
+        "url_slug": "metropolitan-square-petaling-jaya-mumeecbh",
+        "lat": 3.166476633979268,
+        "lng": 101.60914519151862
+      },
+      {
+        "title": "Metropolitan Square Condominium, Petaling Jaya",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 700,
+        "url": "https://speedhome.com/details/metropolitan-square-condominium-petaling-jaya-qyldjddq",
+        "url_slug": "metropolitan-square-condominium-petaling-jaya-qyldjddq",
+        "lat": 3.166476633979268,
+        "lng": 101.60914519151862
+      },
+      {
+        "title": "Palm Spring, Petaling Jaya",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 685,
+        "url": "https://speedhome.com/details/palm-spring-petaling-jaya-mgwqfqxp",
+        "url_slug": "palm-spring-petaling-jaya-mgwqfqxp",
+        "lat": 3.15096,
+        "lng": 101.599
+      },
+      {
+        "title": "Tulip Residence, Shah Alam",
+        "sqft": 956,
+        "bedrooms": 3,
+        "price_month": 1900,
+        "url": "https://speedhome.com/details/tulip-residence-shah-alam-mssbitwn",
+        "url_slug": "tulip-residence-shah-alam-mssbitwn",
+        "lat": 3.1688306110640285,
+        "lng": 101.51182715412122
+      },
+      {
+        "title": "Empire Damansara, Petaling Jaya",
+        "sqft": 363,
+        "bedrooms": 1,
+        "price_month": 1200,
+        "url": "https://speedhome.com/details/empire-damansara-petaling-jaya-rnurjxft",
+        "url_slug": "empire-damansara-petaling-jaya-rnurjxft",
+        "lat": 3.1657335493,
+        "lng": 101.6121304035
+      },
+      {
+        "title": "Perdana Exclusive, Petaling Jaya",
+        "sqft": 860,
+        "bedrooms": 2,
+        "price_month": 1900,
+        "url": "https://speedhome.com/details/perdana-exclusive-petaling-jaya-cezxwrtp",
+        "url_slug": "perdana-exclusive-petaling-jaya-cezxwrtp",
+        "lat": 3.169269,
+        "lng": 101.605017
+      },
+      {
+        "title": "Paxtonz Empire City, Damansara Perdana",
+        "sqft": 334,
+        "bedrooms": 1,
+        "price_month": 1400,
+        "url": "https://speedhome.com/details/paxtonz-empire-city-damansara-perdana-htrqchxr",
+        "url_slug": "paxtonz-empire-city-damansara-perdana-htrqchxr",
+        "lat": 3.167482439301825,
+        "lng": 101.61687192433267
+      },
+      {
+        "title": "Sqwhere Service Residence, Sungai Buloh",
+        "sqft": 2200,
+        "bedrooms": 4,
+        "price_month": 5500,
+        "url": "https://speedhome.com/details/sqwhere-service-residence-sungai-buloh-bniieqhp",
+        "url_slug": "sqwhere-service-residence-sungai-buloh-bniieqhp",
+        "lat": 3.19683502765782,
+        "lng": 101.57749966565822
+      },
+      {
+        "title": "Mossaz by Exsim, Petaling Jaya",
+        "sqft": 324,
+        "bedrooms": 0,
+        "price_month": 1600,
+        "url": "https://speedhome.com/details/mossaz-by-exsim-petaling-jaya-xaiwubgt",
+        "url_slug": "mossaz-by-exsim-petaling-jaya-xaiwubgt",
+        "lat": 3.167270377104756,
+        "lng": 101.61685240899054
+      },
+      {
+        "title": "Empire City, Petaling Jaya",
+        "sqft": 448,
+        "bedrooms": 1,
+        "price_month": 1300,
+        "url": "https://speedhome.com/details/empire-city-petaling-jaya-vjkhjnvi",
+        "url_slug": "empire-city-petaling-jaya-vjkhjnvi",
+        "lat": 3.1683152498,
+        "lng": 101.6154402494
+      },
+      {
+        "title": "I Residence, Kota Damansara",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 800,
+        "url": "https://speedhome.com/details/i-residence-kota-damansara-wbgupkoe",
+        "url_slug": "i-residence-kota-damansara-wbgupkoe",
+        "lat": 3.150575,
+        "lng": 101.582615
+      },
+      {
+        "title": "Senada Residences KLGCC Resort, Bukit Kiara",
+        "sqft": 958,
+        "bedrooms": 2,
+        "price_month": 4250,
+        "url": "https://speedhome.com/details/senada-residences-klgcc-resort-bukit-kiara-hmdsvpab",
+        "url_slug": "senada-residences-klgcc-resort-bukit-kiara-hmdsvpab",
+        "lat": 3.138083666576094,
+        "lng": 101.64924661013033
+      },
+      {
+        "title": "Empire Damansara, Damansara Perdana",
+        "sqft": 850,
+        "bedrooms": 1,
+        "price_month": 2100,
+        "url": "https://speedhome.com/details/empire-damansara-damansara-perdana-dwdohwfx",
+        "url_slug": "empire-damansara-damansara-perdana-dwdohwfx",
+        "lat": 3.1677474904870433,
+        "lng": 101.61243081090967
+      },
+      {
+        "title": "Renai Jelutong Residences, Shah Alam",
+        "sqft": 816,
+        "bedrooms": 2,
+        "price_month": 2100,
+        "url": "https://speedhome.com/details/renai-jelutong-residences-shah-alam-pryzrfpv",
+        "url_slug": "renai-jelutong-residences-shah-alam-pryzrfpv",
+        "lat": 3.097320361034913,
+        "lng": 101.53699746869773
+      },
+      {
+        "title": "Pelangi Damansara Condo",
+        "sqft": 950,
+        "bedrooms": 3,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/pelangi-damansara-condo-vjykoqof",
+        "url_slug": "pelangi-damansara-condo-vjykoqof",
+        "lat": 3.1540589417536893,
+        "lng": 101.60454608094355
+      },
+      {
+        "title": "The Zizz, Damansara Damai",
+        "sqft": 1228,
+        "bedrooms": 4,
+        "price_month": 2300,
+        "url": "https://speedhome.com/details/the-zizz-damansara-damai-kvkffoqf",
+        "url_slug": "the-zizz-damansara-damai-kvkffoqf",
+        "lat": 3.1987059855,
+        "lng": 101.5964984894
+      },
+      {
+        "title": "One Damansara Condominium, Petaling Jaya",
+        "sqft": 986,
+        "bedrooms": 3,
+        "price_month": 1900,
+        "url": "https://speedhome.com/details/one-damansara-condominium-petaling-jaya-ydlwhixu",
+        "url_slug": "one-damansara-condominium-petaling-jaya-ydlwhixu",
+        "lat": 3.1977428,
+        "lng": 101.5929121
+      },
+      {
+        "title": "Kasturi Idaman Condominium, Kota Damansara",
+        "sqft": 946,
+        "bedrooms": 3,
+        "price_month": 1400,
+        "url": "https://speedhome.com/details/kasturi-idaman-condominium-kota-damansara-uhdqpjcm",
+        "url_slug": "kasturi-idaman-condominium-kota-damansara-uhdqpjcm",
+        "lat": 3.1775063,
+        "lng": 101.5759472
+      },
+      {
+        "title": "Casa Tropicana",
+        "sqft": 1007,
+        "bedrooms": 2,
+        "price_month": 2200,
+        "url": "https://speedhome.com/details/casa-tropicana-kccmhczz",
+        "url_slug": "casa-tropicana-kccmhczz",
+        "lat": 3.1372073,
+        "lng": 101.5942519
+      },
+      {
+        "title": "Halo Sunday Studios, Empire City",
+        "sqft": 582,
+        "bedrooms": 0,
+        "price_month": 1300,
+        "url": "https://speedhome.com/details/halo-sunday-studios-empire-city-uitigsed",
+        "url_slug": "halo-sunday-studios-empire-city-uitigsed",
+        "lat": 3.1697338,
+        "lng": 101.6169951
+      },
+      {
+        "title": "Empire City, Damansara Perdana",
+        "sqft": 450,
+        "bedrooms": 1,
+        "price_month": 1400,
+        "url": "https://speedhome.com/details/empire-city-damansara-perdana-nxarkqxl",
+        "url_slug": "empire-city-damansara-perdana-nxarkqxl",
+        "lat": 3.1683607776152236,
+        "lng": 101.61625597625971
+      },
+      {
+        "title": "Jalan Jeriji, Bukit Jelutong",
+        "sqft": 2090,
+        "bedrooms": 4,
+        "price_month": 2450,
+        "url": "https://speedhome.com/details/jalan-jeriji-bukit-jelutong-dvzqzytq",
+        "url_slug": "jalan-jeriji-bukit-jelutong-dvzqzytq",
+        "lat": 3.123785039846843,
+        "lng": 101.52696724981071
+      },
+      {
+        "title": "My Loft Empire City, Petaling Jaya",
+        "sqft": 768,
+        "bedrooms": 1,
+        "price_month": 2100,
+        "url": "https://speedhome.com/details/my-loft-empire-city-petaling-jaya-rxpzcnuk",
+        "url_slug": "my-loft-empire-city-petaling-jaya-rxpzcnuk",
+        "lat": 3.1677874949507023,
+        "lng": 101.6155443
+      },
+      {
+        "title": "Subang Olives Residence, SS 16",
+        "sqft": 1000,
+        "bedrooms": 2,
+        "price_month": 2200,
+        "url": "https://speedhome.com/details/subang-olives-residence-ss-16-nohhgqqk",
+        "url_slug": "subang-olives-residence-ss-16-nohhgqqk",
+        "lat": 3.0803410147,
+        "lng": 101.5739089251
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Ttdi",
+      "radius_km": 12.0,
+      "target_lat": 3.167270377104756,
+      "target_lng": 101.60454608094355,
+      "geocode_succeeded": false,
+      "total_before": 85,
+      "total_after": 26,
+      "dropped_no_coords": 56,
+      "dropped_out_of_radius": 3
+    }
+  ]
+}

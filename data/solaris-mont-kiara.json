@@ -1,0 +1,129 @@
+{
+  "slug": "solaris-mont-kiara",
+  "units": [
+    [
+      {
+        "title": "Laman Suria, Mont Kiara",
+        "sqft": 1034,
+        "bedrooms": 2,
+        "price_month": 2900,
+        "url": "https://speedhome.com/details/laman-suria-mont-kiara-uhqvfmfj",
+        "url_slug": "laman-suria-mont-kiara-uhqvfmfj",
+        "lat": 3.16881,
+        "lng": 101.65
+      },
+      {
+        "title": "Bukit Damansara, Damansara Heights",
+        "sqft": 2500,
+        "bedrooms": 4,
+        "price_month": 8500,
+        "url": "https://speedhome.com/details/bukit-damansara-damansara-heights-wfvyjwdp",
+        "url_slug": "bukit-damansara-damansara-heights-wfvyjwdp",
+        "lat": 3.1520966609,
+        "lng": 101.6566183604
+      },
+      {
+        "title": "Riana dutamas savio",
+        "sqft": 904,
+        "bedrooms": 2,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/riana-dutamas-savio-sraetfwb",
+        "url_slug": "riana-dutamas-savio-sraetfwb",
+        "lat": 3.1854116383,
+        "lng": 101.6672234233
+      },
+      {
+        "title": "Savvy Riana Dutamas 2, Segambut",
+        "sqft": 1203,
+        "bedrooms": 3,
+        "price_month": 2700,
+        "url": "https://speedhome.com/details/savvy-riana-dutamas-2-segambut-cdgjemua",
+        "url_slug": "savvy-riana-dutamas-2-segambut-cdgjemua",
+        "lat": 3.1863007464961126,
+        "lng": 101.66833813614836
+      },
+      {
+        "title": "The Pano, Kuala Lumpur",
+        "sqft": 500,
+        "bedrooms": 1,
+        "price_month": 1700,
+        "url": "https://speedhome.com/details/the-pano-kuala-lumpur-nzncumdv",
+        "url_slug": "the-pano-kuala-lumpur-nzncumdv",
+        "lat": 3.1855916,
+        "lng": 101.6815326
+      },
+      {
+        "title": "Sophia Condominium, Mont Kiara",
+        "sqft": 1000,
+        "bedrooms": 2,
+        "price_month": 3500,
+        "url": "https://speedhome.com/details/sophia-condominium-mont-kiara-ahomfuix",
+        "url_slug": "sophia-condominium-mont-kiara-ahomfuix",
+        "lat": 3.1701,
+        "lng": 101.654
+      },
+      {
+        "title": "The ERA, Segambut",
+        "sqft": null,
+        "bedrooms": "SMALL",
+        "price_month": 900,
+        "url": "https://speedhome.com/details/the-era-segambut-hazjsjcb",
+        "url_slug": "the-era-segambut-hazjsjcb",
+        "lat": 3.1819735165,
+        "lng": 101.6753232479
+      },
+      {
+        "title": "MET 1 Residences, Kuala Lumpur",
+        "sqft": 677,
+        "bedrooms": 1,
+        "price_month": 2999,
+        "url": "https://speedhome.com/details/met-1-residences-kuala-lumpur-uiachrkj",
+        "url_slug": "met-1-residences-kuala-lumpur-uiachrkj",
+        "lat": 3.1494727,
+        "lng": 101.7139056
+      },
+      {
+        "title": "Andalucia, Pantai",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 1100,
+        "url": "https://speedhome.com/details/andalucia-pantai-nrgvbjxr",
+        "url_slug": "andalucia-pantai-nrgvbjxr",
+        "lat": 3.1065026557,
+        "lng": 101.6620141268
+      },
+      {
+        "title": "Bennington Residences, Setapak",
+        "sqft": 1332,
+        "bedrooms": 3,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/bennington-residences-setapak-ttchdbmn",
+        "url_slug": "bennington-residences-setapak-ttchdbmn",
+        "lat": 3.1943769522953405,
+        "lng": 101.71467926740367
+      },
+      {
+        "title": "Verve Suites, Mont Kiara",
+        "sqft": 463,
+        "bedrooms": 1,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/verve-suites-mont-kiara-sigflyhx",
+        "url_slug": "verve-suites-mont-kiara-sigflyhx",
+        "lat": 3.16741,
+        "lng": 101.646
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Solaris Mont Kiara",
+      "radius_km": 12.0,
+      "target_lat": 3.1701,
+      "target_lng": 101.66833813614836,
+      "geocode_succeeded": false,
+      "total_before": 33,
+      "total_after": 11,
+      "dropped_no_coords": 21,
+      "dropped_out_of_radius": 1
+    }
+  ]
+}

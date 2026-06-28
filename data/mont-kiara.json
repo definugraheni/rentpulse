@@ -1,0 +1,259 @@
+{
+  "slug": "mont-kiara",
+  "units": [
+    [
+      {
+        "title": "Laman Suria, Mont Kiara",
+        "sqft": 1034,
+        "bedrooms": 2,
+        "price_month": 2900,
+        "url": "https://speedhome.com/details/laman-suria-mont-kiara-uhqvfmfj",
+        "url_slug": "laman-suria-mont-kiara-uhqvfmfj",
+        "lat": 3.16881,
+        "lng": 101.65
+      },
+      {
+        "title": "Maxim Citylights, Sentul",
+        "sqft": 1009,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/maxim-citylights-sentul-vyctxwze",
+        "url_slug": "maxim-citylights-sentul-vyctxwze",
+        "lat": 3.2072863583,
+        "lng": 101.6906520724
+      },
+      {
+        "title": "Bukit Damansara, Damansara Heights",
+        "sqft": 2500,
+        "bedrooms": 4,
+        "price_month": 8500,
+        "url": "https://speedhome.com/details/bukit-damansara-damansara-heights-wfvyjwdp",
+        "url_slug": "bukit-damansara-damansara-heights-wfvyjwdp",
+        "lat": 3.1520966609,
+        "lng": 101.6566183604
+      },
+      {
+        "title": "The ERA, Segambut",
+        "sqft": 280,
+        "bedrooms": 1,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/the-era-segambut-dsfsvhfe",
+        "url_slug": "the-era-segambut-dsfsvhfe",
+        "lat": 3.1819735165,
+        "lng": 101.6753232479
+      },
+      {
+        "title": "Riana dutamas savio",
+        "sqft": 904,
+        "bedrooms": 2,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/riana-dutamas-savio-sraetfwb",
+        "url_slug": "riana-dutamas-savio-sraetfwb",
+        "lat": 3.1854116383,
+        "lng": 101.6672234233
+      },
+      {
+        "title": "Savvy Riana Dutamas 2, Segambut",
+        "sqft": 1203,
+        "bedrooms": 3,
+        "price_month": 2700,
+        "url": "https://speedhome.com/details/savvy-riana-dutamas-2-segambut-cdgjemua",
+        "url_slug": "savvy-riana-dutamas-2-segambut-cdgjemua",
+        "lat": 3.1863007464961126,
+        "lng": 101.66833813614836
+      },
+      {
+        "title": "Savvy Riana Dutamas 2, Segambut",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 888,
+        "url": "https://speedhome.com/details/savvy-riana-dutamas-2-segambut-lhvlldkz",
+        "url_slug": "savvy-riana-dutamas-2-segambut-lhvlldkz",
+        "lat": 3.185969205113495,
+        "lng": 101.66791106549252
+      },
+      {
+        "title": "The Pano, Kuala Lumpur",
+        "sqft": 500,
+        "bedrooms": 1,
+        "price_month": 1700,
+        "url": "https://speedhome.com/details/the-pano-kuala-lumpur-nzncumdv",
+        "url_slug": "the-pano-kuala-lumpur-nzncumdv",
+        "lat": 3.1855916,
+        "lng": 101.6815326
+      },
+      {
+        "title": "Sophia Condominium, Mont Kiara",
+        "sqft": 1000,
+        "bedrooms": 2,
+        "price_month": 3500,
+        "url": "https://speedhome.com/details/sophia-condominium-mont-kiara-ahomfuix",
+        "url_slug": "sophia-condominium-mont-kiara-ahomfuix",
+        "lat": 3.1701,
+        "lng": 101.654
+      },
+      {
+        "title": "Duta Park Residences, Kuala Lumpur",
+        "sqft": 1129,
+        "bedrooms": 3,
+        "price_month": 4000,
+        "url": "https://speedhome.com/details/duta-park-residences-kuala-lumpur-pqdvkwmw",
+        "url_slug": "duta-park-residences-kuala-lumpur-pqdvkwmw",
+        "lat": 3.1706746691253733,
+        "lng": 101.68638966137273
+      },
+      {
+        "title": "The ERA, Segambut",
+        "sqft": null,
+        "bedrooms": "SMALL",
+        "price_month": 900,
+        "url": "https://speedhome.com/details/the-era-segambut-hazjsjcb",
+        "url_slug": "the-era-segambut-hazjsjcb",
+        "lat": 3.1819735165,
+        "lng": 101.6753232479
+      },
+      {
+        "title": "The ERA, Segambut",
+        "sqft": 301,
+        "bedrooms": 0,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/the-era-segambut-bmkcskjh",
+        "url_slug": "the-era-segambut-bmkcskjh",
+        "lat": 3.1819735165,
+        "lng": 101.6753232479
+      },
+      {
+        "title": "Scenaria, Segambut",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 600,
+        "url": "https://speedhome.com/details/scenaria-segambut-gaalpiaa",
+        "url_slug": "scenaria-segambut-gaalpiaa",
+        "lat": 3.1824165,
+        "lng": 101.6512557
+      },
+      {
+        "title": "The ERA, Segambut",
+        "sqft": 646,
+        "bedrooms": 1,
+        "price_month": 2100,
+        "url": "https://speedhome.com/details/the-era-segambut-ixqdfozo",
+        "url_slug": "the-era-segambut-ixqdfozo",
+        "lat": 3.1830118851224687,
+        "lng": 101.67432273164533
+      },
+      {
+        "title": "Boulevard Service Apartment",
+        "sqft": 1019,
+        "bedrooms": 3,
+        "price_month": 1600,
+        "url": "https://speedhome.com/details/boulevard-service-apartment-qdrrxywf",
+        "url_slug": "boulevard-service-apartment-qdrrxywf",
+        "lat": 3.2001273,
+        "lng": 101.6713918
+      },
+      {
+        "title": "Savio Riana Dutamas",
+        "sqft": 845,
+        "bedrooms": 2,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/savio-riana-dutamas-jvssagua",
+        "url_slug": "savio-riana-dutamas-jvssagua",
+        "lat": 3.1854116383,
+        "lng": 101.6672234233
+      },
+      {
+        "title": "Royal Domain Condominium, Sri Putramas 2",
+        "sqft": 1300,
+        "bedrooms": 3,
+        "price_month": 1750,
+        "url": "https://speedhome.com/details/royal-domain-condominium-sri-putramas-2-bhbfrrbv",
+        "url_slug": "royal-domain-condominium-sri-putramas-2-bhbfrrbv",
+        "lat": 3.180318,
+        "lng": 101.674337
+      },
+      {
+        "title": "1 Sentul Condominium, Sentul",
+        "sqft": 1080,
+        "bedrooms": 3,
+        "price_month": 1750,
+        "url": "https://speedhome.com/details/1-sentul-condominium-sentul-dqbgugut",
+        "url_slug": "1-sentul-condominium-sentul-dqbgugut",
+        "lat": 3.199879009784324,
+        "lng": 101.69003026864856
+      },
+      {
+        "title": "EcoSky, Jalan Ipoh",
+        "sqft": 1109,
+        "bedrooms": 3,
+        "price_month": 2300,
+        "url": "https://speedhome.com/details/ecosky-jalan-ipoh-ycltulhj",
+        "url_slug": "ecosky-jalan-ipoh-ycltulhj",
+        "lat": 3.2191391518,
+        "lng": 101.6709566116
+      },
+      {
+        "title": "Rica Residence, Sentul",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 900,
+        "url": "https://speedhome.com/details/rica-residence-sentul-peieanbb",
+        "url_slug": "rica-residence-sentul-peieanbb",
+        "lat": 3.1781599323,
+        "lng": 101.6878652573
+      },
+      {
+        "title": "Alam Puri Condo",
+        "sqft": 1018,
+        "bedrooms": 3,
+        "price_month": 1750,
+        "url": "https://speedhome.com/details/alam-puri-condo-bzdhivvp",
+        "url_slug": "alam-puri-condo-bzdhivvp",
+        "lat": 3.208212,
+        "lng": 101.6746669
+      },
+      {
+        "title": "Villa Puteri Condominium",
+        "sqft": 1119,
+        "bedrooms": 3,
+        "price_month": 2300,
+        "url": "https://speedhome.com/details/villa-puteri-condominium-omcppfit",
+        "url_slug": "villa-puteri-condominium-omcppfit",
+        "lat": 3.1657914,
+        "lng": 101.6923278
+      },
+      {
+        "title": "Rica Residence, Sentul",
+        "sqft": 657,
+        "bedrooms": 2,
+        "price_month": 1600,
+        "url": "https://speedhome.com/details/rica-residence-sentul-kiunkejv",
+        "url_slug": "rica-residence-sentul-kiunkejv",
+        "lat": 3.1784228,
+        "lng": 101.6876832
+      },
+      {
+        "title": "Mercury Serviced Apartment @ Sentul Village, Sentul",
+        "sqft": 948,
+        "bedrooms": 3,
+        "price_month": 1600,
+        "url": "https://speedhome.com/details/mercury-serviced-apartment-sentul-village-sentul-ylkhvwcu",
+        "url_slug": "mercury-serviced-apartment-sentul-village-sentul-ylkhvwcu",
+        "lat": 3.2100607706,
+        "lng": 101.6890025139
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Mont Kiara",
+      "radius_km": 12.0,
+      "target_lat": 3.1830118851224687,
+      "target_lng": 101.6746669,
+      "geocode_succeeded": false,
+      "total_before": 61,
+      "total_after": 24,
+      "dropped_no_coords": 37,
+      "dropped_out_of_radius": 0
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "slug": "shah-alam",
+  "units": [
+    [
+      {
+        "title": "Suria Ixora, Shah Alam",
+        "sqft": 700,
+        "bedrooms": 3,
+        "price_month": 1350,
+        "url": "https://speedhome.com/details/suria-ixora-shah-alam-osvzbgit",
+        "url_slug": "suria-ixora-shah-alam-osvzbgit",
+        "lat": 3.1223900192,
+        "lng": 101.4667010307
+      },
+      {
+        "title": "Residensi Alami, Shah Alam",
+        "sqft": 1080,
+        "bedrooms": 3,
+        "price_month": 2100,
+        "url": "https://speedhome.com/details/residensi-alami-shah-alam-vosfohiy",
+        "url_slug": "residensi-alami-shah-alam-vosfohiy",
+        "lat": 3.0726916663,
+        "lng": 101.5430152416
+      },
+      {
+        "title": "i-Suite, Shah Alam",
+        "sqft": 567,
+        "bedrooms": 2,
+        "price_month": 2600,
+        "url": "https://speedhome.com/details/i-suite-shah-alam-qsubkauc",
+        "url_slug": "i-suite-shah-alam-qsubkauc",
+        "lat": 3.0653739008288197,
+        "lng": 101.48063977681855
+      },
+      {
+        "title": "Setia Alam, Shah Alam",
+        "sqft": 2104,
+        "bedrooms": 4,
+        "price_month": 2200,
+        "url": "https://speedhome.com/details/setia-alam-shah-alam-ausxnmch",
+        "url_slug": "setia-alam-shah-alam-ausxnmch",
+        "lat": 3.1120198725,
+        "lng": 101.4601993561
+      },
+      {
+        "title": "Double Storey Townhouse",
+        "sqft": 1000,
+        "bedrooms": 2,
+        "price_month": 2200,
+        "url": "https://speedhome.com/details/double-storey-townhouse-ziajbpsx",
+        "url_slug": "double-storey-townhouse-ziajbpsx",
+        "lat": 2.992372642571668,
+        "lng": 101.54016925140333
+      },
+      {
+        "title": "Residensi Alami, Shah Alam",
+        "sqft": 1080,
+        "bedrooms": 3,
+        "price_month": 2500,
+        "url": "https://speedhome.com/details/residensi-alami-shah-alam-gvwyqzft",
+        "url_slug": "residensi-alami-shah-alam-gvwyqzft",
+        "lat": 3.0726916663,
+        "lng": 101.5430152416
+      },
+      {
+        "title": "Suria Jaya, Shah Alam",
+        "sqft": 438,
+        "bedrooms": 1,
+        "price_month": 1250,
+        "url": "https://speedhome.com/details/suria-jaya-shah-alam-fdlbqyie",
+        "url_slug": "suria-jaya-shah-alam-fdlbqyie",
+        "lat": 3.054781186719602,
+        "lng": 101.49131665586941
+      },
+      {
+        "title": "EduSentral, Shah Alam Y-11-01 (ST2)",
+        "sqft": 502,
+        "bedrooms": 1,
+        "price_month": 1500,
+        "url": "https://speedhome.com/details/edusentral-shah-alam-y-11-01-st2-coogawku",
+        "url_slug": "edusentral-shah-alam-y-11-01-st2-coogawku",
+        "lat": 3.1438763,
+        "lng": 101.5136398
+      },
+      {
+        "title": "Setia Alam, Shah Alam",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 1290,
+        "url": "https://speedhome.com/details/setia-alam-shah-alam-jpqesuod",
+        "url_slug": "setia-alam-shah-alam-jpqesuod",
+        "lat": 3.096771539082916,
+        "lng": 101.44722340475076
+      },
+      {
+        "title": "i-Soho, i-City",
+        "sqft": 614,
+        "bedrooms": 2,
+        "price_month": 1700,
+        "url": "https://speedhome.com/details/i-soho-i-city-usljnhnl",
+        "url_slug": "i-soho-i-city-usljnhnl",
+        "lat": 3.0659003216048615,
+        "lng": 101.4815617641592
+      },
+      {
+        "title": "i-Soho, i-City",
+        "sqft": 466,
+        "bedrooms": 1,
+        "price_month": 1350,
+        "url": "https://speedhome.com/details/i-soho-i-city-lhqajzej",
+        "url_slug": "i-soho-i-city-lhqajzej",
+        "lat": 3.0659003216048615,
+        "lng": 101.4815617641592
+      },
+      {
+        "title": "Setia Impian U13",
+        "sqft": 1550,
+        "bedrooms": 3,
+        "price_month": 2550,
+        "url": "https://speedhome.com/details/setia-impian-u13-knxsggiq",
+        "url_slug": "setia-impian-u13-knxsggiq",
+        "lat": 3.0975786304,
+        "lng": 101.4522385597
+      },
+      {
+        "title": "Vista Alam, Shah Alam",
+        "sqft": 150,
+        "bedrooms": 1,
+        "price_month": 900,
+        "url": "https://speedhome.com/details/vista-alam-shah-alam-hlgtvqnz",
+        "url_slug": "vista-alam-shah-alam-hlgtvqnz",
+        "lat": 3.0708703848,
+        "lng": 101.5247225761
+      },
+      {
+        "title": "Bungaraya Condominium, Shah Alam",
+        "sqft": 1378,
+        "bedrooms": 3,
+        "price_month": 2700,
+        "url": "https://speedhome.com/details/bungaraya-condominium-shah-alam-vijjpfjb",
+        "url_slug": "bungaraya-condominium-shah-alam-vijjpfjb",
+        "lat": 3.111730621,
+        "lng": 101.5720528364
+      },
+      {
+        "title": "Embayu Damansara West, Subang Bestari",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 800,
+        "url": "https://speedhome.com/details/embayu-damansara-west-subang-bestari-ygeuyiwu",
+        "url_slug": "embayu-damansara-west-subang-bestari-ygeuyiwu",
+        "lat": 3.1646922502553907,
+        "lng": 101.54443783909818
+      },
+      {
+        "title": "Acappella Serviced Aparment, Section 13, Shah Alam",
+        "sqft": 1500,
+        "bedrooms": 3,
+        "price_month": 4200,
+        "url": "https://speedhome.com/details/acappella-serviced-aparment-section-13-shah-alam-ysflyumm",
+        "url_slug": "acappella-serviced-aparment-section-13-shah-alam-ysflyumm",
+        "lat": 3.0886866697,
+        "lng": 101.5483206511
+      },
+      {
+        "title": "i-Soho",
+        "sqft": 700,
+        "bedrooms": 1,
+        "price_month": 1600,
+        "url": "https://speedhome.com/details/i-soho-dxoqgwhj",
+        "url_slug": "i-soho-dxoqgwhj",
+        "lat": 3.0659003216048615,
+        "lng": 101.4815617641592
+      },
+      {
+        "title": "Setia City Residences, Shah Alam",
+        "sqft": 400,
+        "bedrooms": 1,
+        "price_month": 1250,
+        "url": "https://speedhome.com/details/setia-city-residences-shah-alam-lofvesnj",
+        "url_slug": "setia-city-residences-shah-alam-lofvesnj",
+        "lat": 3.1126626531,
+        "lng": 101.4591264725
+      },
+      {
+        "title": "i-Soho @ i-City, Shah Alam",
+        "sqft": 850,
+        "bedrooms": 2,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/i-soho-i-city-shah-alam-whjytwqa",
+        "url_slug": "i-soho-i-city-shah-alam-whjytwqa",
+        "lat": 3.0659003216048615,
+        "lng": 101.4815617641592
+      },
+      {
+        "title": "Edusentral",
+        "sqft": 502,
+        "bedrooms": 1,
+        "price_month": 1400,
+        "url": "https://speedhome.com/details/edusentral-sfmtajzn",
+        "url_slug": "edusentral-sfmtajzn",
+        "lat": 3.1438763,
+        "lng": 101.5136398
+      },
+      {
+        "title": "Nova Saujana, Saujana",
+        "sqft": 855,
+        "bedrooms": 2,
+        "price_month": 2300,
+        "url": "https://speedhome.com/details/nova-saujana-saujana-pwlrfuhq",
+        "url_slug": "nova-saujana-saujana-pwlrfuhq",
+        "lat": 3.1088488155,
+        "lng": 101.5812206268
+      },
+      {
+        "title": "Embayu, Damansara West",
+        "sqft": 900,
+        "bedrooms": 3,
+        "price_month": 1850,
+        "url": "https://speedhome.com/details/embayu-damansara-west-omwbzlyv",
+        "url_slug": "embayu-damansara-west-omwbzlyv",
+        "lat": 3.1646922502553907,
+        "lng": 101.54443783909818
+      },
+      {
+        "title": "Seksyen 16, Shah Alam",
+        "sqft": 1178,
+        "bedrooms": 3,
+        "price_month": 2100,
+        "url": "https://speedhome.com/details/seksyen-16-shah-alam-vywnrkeu",
+        "url_slug": "seksyen-16-shah-alam-vywnrkeu",
+        "lat": 3.0572856695,
+        "lng": 101.4825260639
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Shah Alam",
+      "radius_km": 12.0,
+      "target_lat": 3.0659003216048615,
+      "target_lng": 101.5430152416,
+      "geocode_succeeded": false,
+      "total_before": 120,
+      "total_after": 23,
+      "dropped_no_coords": 84,
+      "dropped_out_of_radius": 13
+    }
+  ]
+}

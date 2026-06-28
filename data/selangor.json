@@ -1,0 +1,179 @@
+{
+  "slug": "selangor",
+  "units": [
+    [
+      {
+        "title": "Flat PKNS SS8, Petaling Jaya",
+        "sqft": 650,
+        "bedrooms": 2,
+        "price_month": 850,
+        "url": "https://speedhome.com/details/flat-pkns-ss8-petaling-jaya-yitgqkgi",
+        "url_slug": "flat-pkns-ss8-petaling-jaya-yitgqkgi",
+        "lat": 3.0894872316208852,
+        "lng": 101.61416778810204
+      },
+      {
+        "title": "D'Quince, Damansara Perdana",
+        "sqft": 550,
+        "bedrooms": 2,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/d-quince-damansara-perdana-boynwxch",
+        "url_slug": "d-quince-damansara-perdana-boynwxch",
+        "lat": 3.118041,
+        "lng": 101.616946
+      },
+      {
+        "title": "Desa Tanjung Apartment, Puchong",
+        "sqft": 850,
+        "bedrooms": 3,
+        "price_month": 1200,
+        "url": "https://speedhome.com/details/desa-tanjung-apartment-puchong-wgyxmryw",
+        "url_slug": "desa-tanjung-apartment-puchong-wgyxmryw",
+        "lat": 3.0268265709,
+        "lng": 101.6287708282
+      },
+      {
+        "title": "Sri Bayu Apartment, Puchong",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 490,
+        "url": "https://speedhome.com/details/sri-bayu-apartment-puchong-mtqvhutd",
+        "url_slug": "sri-bayu-apartment-puchong-mtqvhutd",
+        "lat": 3.066467156,
+        "lng": 101.6242593527
+      },
+      {
+        "title": "Sri Bayu Apartment, Puchong",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 950,
+        "url": "https://speedhome.com/details/sri-bayu-apartment-puchong-sihzggqx",
+        "url_slug": "sri-bayu-apartment-puchong-sihzggqx",
+        "lat": 3.066467156,
+        "lng": 101.6242593527
+      },
+      {
+        "title": "Puncak Damansara Condominium, Petaling Jaya",
+        "sqft": 1114,
+        "bedrooms": 3,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/puncak-damansara-condominium-petaling-jaya-rjoceeev",
+        "url_slug": "puncak-damansara-condominium-petaling-jaya-rjoceeev",
+        "lat": 3.136711697943813,
+        "lng": 101.61615644602786
+      },
+      {
+        "title": "Pangsapuri Mutiara Perdana, Subang Jaya",
+        "sqft": 915,
+        "bedrooms": 4,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/pangsapuri-mutiara-perdana-subang-jaya-oaqrvnhd",
+        "url_slug": "pangsapuri-mutiara-perdana-subang-jaya-oaqrvnhd",
+        "lat": 3.0677420587,
+        "lng": 101.6178327799
+      },
+      {
+        "title": "Pacific Star Tower, Petaling Jaya",
+        "sqft": 342,
+        "bedrooms": 1,
+        "price_month": 1700,
+        "url": "https://speedhome.com/details/pacific-star-tower-petaling-jaya-rqrtwcpe",
+        "url_slug": "pacific-star-tower-petaling-jaya-rqrtwcpe",
+        "lat": 3.116750664557432,
+        "lng": 101.63477119549691
+      },
+      {
+        "title": "Oasis Damansara, Petaling Jaya",
+        "sqft": 572,
+        "bedrooms": 1,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/oasis-damansara-petaling-jaya-rdzuzazy",
+        "url_slug": "oasis-damansara-petaling-jaya-rdzuzazy",
+        "lat": 3.113665,
+        "lng": 101.574957
+      },
+      {
+        "title": "Meta Residences, Seri Kembangan",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 700,
+        "url": "https://speedhome.com/details/meta-residences-seri-kembangan-klxkntlm",
+        "url_slug": "meta-residences-seri-kembangan-klxkntlm",
+        "lat": 2.981723886631498,
+        "lng": 101.66339785927732
+      },
+      {
+        "title": "Sri Bayu Apartment, Puchong",
+        "sqft": 1100,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/sri-bayu-apartment-puchong-pfkhjbwn",
+        "url_slug": "sri-bayu-apartment-puchong-pfkhjbwn",
+        "lat": 3.066467156,
+        "lng": 101.6242593527
+      },
+      {
+        "title": "Cat-Friendly Master Room with Private Bath @ Dian Residency Seksyen 13, LRT3 Walking Distance",
+        "sqft": null,
+        "bedrooms": "MASTER",
+        "price_month": 950,
+        "url": "https://speedhome.com/details/cat-friendly-master-room-with-private-bath-dian-residency-seksyen-13-lrt3-walking-distance-orajamvc",
+        "url_slug": "cat-friendly-master-room-with-private-bath-dian-residency-seksyen-13-lrt3-walking-distance-orajamvc",
+        "lat": 3.089468850520022,
+        "lng": 101.5471699866693
+      },
+      {
+        "title": "Compact 2-Bedroom Unit @ Dian Residency Seksyen 13, LRT3 Walking Distance",
+        "sqft": 550,
+        "bedrooms": 2,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/compact-2-bedroom-unit-dian-residency-seksyen-13-lrt3-walking-distance-raiemjkg",
+        "url_slug": "compact-2-bedroom-unit-dian-residency-seksyen-13-lrt3-walking-distance-raiemjkg",
+        "lat": 3.089468850520022,
+        "lng": 101.5471699866693
+      },
+      {
+        "title": "Fully Furnished 3R2B @ Sri Acappella Seksyen 13, Walking to LRT3 Stadium Shah Alam",
+        "sqft": 947,
+        "bedrooms": 3,
+        "price_month": 2150,
+        "url": "https://speedhome.com/details/fully-furnished-3r2b-sri-acappella-seksyen-13-walking-to-lrt3-stadium-shah-alam-amvwhrfd",
+        "url_slug": "fully-furnished-3r2b-sri-acappella-seksyen-13-walking-to-lrt3-stadium-shah-alam-amvwhrfd",
+        "lat": 3.0883489667681117,
+        "lng": 101.54817296650701
+      },
+      {
+        "title": "Seri Topaz, Puchong",
+        "sqft": 1045,
+        "bedrooms": 3,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/seri-topaz-puchong-lnowhxid",
+        "url_slug": "seri-topaz-puchong-lnowhxid",
+        "lat": 3.014732247339766,
+        "lng": 101.60567560741539
+      },
+      {
+        "title": "Metropolitan Square Condominium, Petaling Jaya",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 700,
+        "url": "https://speedhome.com/details/metropolitan-square-condominium-petaling-jaya-qyldjddq",
+        "url_slug": "metropolitan-square-condominium-petaling-jaya-qyldjddq",
+        "lat": 3.166476633979268,
+        "lng": 101.60914519151862
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Selangor",
+      "radius_km": 12.0,
+      "target_lat": 3.066467156,
+      "target_lng": 101.6242593527,
+      "geocode_succeeded": false,
+      "total_before": 120,
+      "total_after": 16,
+      "dropped_no_coords": 84,
+      "dropped_out_of_radius": 20
+    }
+  ]
+}

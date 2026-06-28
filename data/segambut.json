@@ -1,0 +1,379 @@
+{
+  "slug": "segambut",
+  "units": [
+    [
+      {
+        "title": "Ascenda Residence, Setapak",
+        "sqft": 908,
+        "bedrooms": 3,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/ascenda-residence-setapak-asgslroj",
+        "url_slug": "ascenda-residence-setapak-asgslroj",
+        "lat": 3.1932068485623812,
+        "lng": 101.71520057397379
+      },
+      {
+        "title": "Taman Sri Segambut, Kuala Lumpur",
+        "sqft": null,
+        "bedrooms": "SMALL",
+        "price_month": 440,
+        "url": "https://speedhome.com/details/taman-sri-segambut-kuala-lumpur-pauqzool",
+        "url_slug": "taman-sri-segambut-kuala-lumpur-pauqzool",
+        "lat": 3.195986811229107,
+        "lng": 101.65817988650818
+      },
+      {
+        "title": "Laman Suria, Mont Kiara",
+        "sqft": 1034,
+        "bedrooms": 2,
+        "price_month": 2900,
+        "url": "https://speedhome.com/details/laman-suria-mont-kiara-uhqvfmfj",
+        "url_slug": "laman-suria-mont-kiara-uhqvfmfj",
+        "lat": 3.16881,
+        "lng": 101.65
+      },
+      {
+        "title": "M Centura, Sentul",
+        "sqft": 850,
+        "bedrooms": 3,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/m-centura-sentul-vqopblch",
+        "url_slug": "m-centura-sentul-vqopblch",
+        "lat": 3.2034807533,
+        "lng": 101.6904997818
+      },
+      {
+        "title": "Maxim Citylights, Sentul",
+        "sqft": 1009,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/maxim-citylights-sentul-vyctxwze",
+        "url_slug": "maxim-citylights-sentul-vyctxwze",
+        "lat": 3.2072863583,
+        "lng": 101.6906520724
+      },
+      {
+        "title": "Flat Taman Sri Murni Fasa 3, Kuala Lumpur",
+        "sqft": 650,
+        "bedrooms": 2,
+        "price_month": 950,
+        "url": "https://speedhome.com/details/flat-taman-sri-murni-fasa-3-kuala-lumpur-welwahao",
+        "url_slug": "flat-taman-sri-murni-fasa-3-kuala-lumpur-welwahao",
+        "lat": 3.2353200253879084,
+        "lng": 101.66311052149015
+      },
+      {
+        "title": "Bukit Damansara, Damansara Heights",
+        "sqft": 2500,
+        "bedrooms": 4,
+        "price_month": 8500,
+        "url": "https://speedhome.com/details/bukit-damansara-damansara-heights-wfvyjwdp",
+        "url_slug": "bukit-damansara-damansara-heights-wfvyjwdp",
+        "lat": 3.1520966609,
+        "lng": 101.6566183604
+      },
+      {
+        "title": "Chambers Residence, Kuala Lumpur",
+        "sqft": 450,
+        "bedrooms": 0,
+        "price_month": 2200,
+        "url": "https://speedhome.com/details/chambers-residence-kuala-lumpur-hhpnxodf",
+        "url_slug": "chambers-residence-kuala-lumpur-hhpnxodf",
+        "lat": 3.167427814418542,
+        "lng": 101.69562076666155
+      },
+      {
+        "title": "KLCC LEGASI Kampong Bharu, Kuala Lumpur",
+        "sqft": 950,
+        "bedrooms": 3,
+        "price_month": 3288,
+        "url": "https://speedhome.com/details/klcc-legasi-kampong-bharu-kuala-lumpur-pszdxlcd",
+        "url_slug": "klcc-legasi-kampong-bharu-kuala-lumpur-pszdxlcd",
+        "lat": 3.160608196605549,
+        "lng": 101.70173253642707
+      },
+      {
+        "title": "99 Residence, Batu Caves",
+        "sqft": 100,
+        "bedrooms": 1,
+        "price_month": 800,
+        "url": "https://speedhome.com/details/99-residence-batu-caves-jgiptjat",
+        "url_slug": "99-residence-batu-caves-jgiptjat",
+        "lat": 3.2292553445682883,
+        "lng": 101.67036139533411
+      },
+      {
+        "title": "The ERA, Segambut",
+        "sqft": 280,
+        "bedrooms": 1,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/the-era-segambut-dsfsvhfe",
+        "url_slug": "the-era-segambut-dsfsvhfe",
+        "lat": 3.1819735165,
+        "lng": 101.6753232479
+      },
+      {
+        "title": "Taman Sri Segambut, Kuala Lumpur",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 450,
+        "url": "https://speedhome.com/details/taman-sri-segambut-kuala-lumpur-vfgizhcq",
+        "url_slug": "taman-sri-segambut-kuala-lumpur-vfgizhcq",
+        "lat": 3.195986811229107,
+        "lng": 101.65817988650818
+      },
+      {
+        "title": "Bennington Residences, Setapak",
+        "sqft": 1332,
+        "bedrooms": 3,
+        "price_month": 2000,
+        "url": "https://speedhome.com/details/bennington-residences-setapak-ttchdbmn",
+        "url_slug": "bennington-residences-setapak-ttchdbmn",
+        "lat": 3.1943769522953405,
+        "lng": 101.71467926740367
+      },
+      {
+        "title": "Casa Magna, Kepong",
+        "sqft": 997,
+        "bedrooms": 3,
+        "price_month": 1250,
+        "url": "https://speedhome.com/details/casa-magna-kepong-akjhqske",
+        "url_slug": "casa-magna-kepong-akjhqske",
+        "lat": 3.2113783459,
+        "lng": 101.6429919004
+      },
+      {
+        "title": "Verve Suites, Mont Kiara",
+        "sqft": 463,
+        "bedrooms": 1,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/verve-suites-mont-kiara-sigflyhx",
+        "url_slug": "verve-suites-mont-kiara-sigflyhx",
+        "lat": 3.16741,
+        "lng": 101.646
+      },
+      {
+        "title": "Sentul Point Suite Apartment",
+        "sqft": 721,
+        "bedrooms": 2,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/sentul-point-suite-apartment-vdghugze",
+        "url_slug": "sentul-point-suite-apartment-vdghugze",
+        "lat": 3.2027769364945065,
+        "lng": 101.68874782130715
+      },
+      {
+        "title": "Sri Putramas, Kuala Lumpur",
+        "sqft": 1050,
+        "bedrooms": 3,
+        "price_month": 1800,
+        "url": "https://speedhome.com/details/sri-putramas-kuala-lumpur-gawudekw",
+        "url_slug": "sri-putramas-kuala-lumpur-gawudekw",
+        "lat": 3.180892,
+        "lng": 101.672501
+      },
+      {
+        "title": "United Point Residence, Segambut",
+        "sqft": 958,
+        "bedrooms": 1,
+        "price_month": 600,
+        "url": "https://speedhome.com/details/united-point-residence-segambut-qpkcxymy",
+        "url_slug": "united-point-residence-segambut-qpkcxymy",
+        "lat": 3.1918287809,
+        "lng": 101.6535115242
+      },
+      {
+        "title": "The Pano, Kuala Lumpur",
+        "sqft": 983,
+        "bedrooms": 3,
+        "price_month": 2850,
+        "url": "https://speedhome.com/details/the-pano-kuala-lumpur-yfmicyed",
+        "url_slug": "the-pano-kuala-lumpur-yfmicyed",
+        "lat": 3.1855916,
+        "lng": 101.6815326
+      },
+      {
+        "title": "Arte, Mont Kiara",
+        "sqft": 944,
+        "bedrooms": 3,
+        "price_month": 3200,
+        "url": "https://speedhome.com/details/arte-mont-kiara-xoehfyha",
+        "url_slug": "arte-mont-kiara-xoehfyha",
+        "lat": 3.1735972,
+        "lng": 101.6530728
+      },
+      {
+        "title": "Solaris Dutamas, Dutamas",
+        "sqft": 1020,
+        "bedrooms": 1,
+        "price_month": 2800,
+        "url": "https://speedhome.com/details/solaris-dutamas-dutamas-ejeqxuve",
+        "url_slug": "solaris-dutamas-dutamas-ejeqxuve",
+        "lat": 3.17124,
+        "lng": 101.66585
+      },
+      {
+        "title": "Sky Awani 2, Kuala Lumpur",
+        "sqft": 800,
+        "bedrooms": 3,
+        "price_month": 2200,
+        "url": "https://speedhome.com/details/sky-awani-2-kuala-lumpur-mdgcacqr",
+        "url_slug": "sky-awani-2-kuala-lumpur-mdgcacqr",
+        "lat": 3.2105905976681655,
+        "lng": 101.68168539748353
+      },
+      {
+        "title": "Casa Idaman, Jalan Ipoh",
+        "sqft": 1007,
+        "bedrooms": 3,
+        "price_month": 1600,
+        "url": "https://speedhome.com/details/casa-idaman-jalan-ipoh-mkgoxtig",
+        "url_slug": "casa-idaman-jalan-ipoh-mkgoxtig",
+        "lat": 3.2038799267,
+        "lng": 101.6806286573
+      },
+      {
+        "title": "Sentul Point Suites Apartment",
+        "sqft": 1002,
+        "bedrooms": 3,
+        "price_month": 1700,
+        "url": "https://speedhome.com/details/sentul-point-suites-apartment-blpubzot",
+        "url_slug": "sentul-point-suites-apartment-blpubzot",
+        "lat": 3.2000664,
+        "lng": 101.6896784
+      },
+      {
+        "title": "Kenwingston Platz, Setapak",
+        "sqft": 650,
+        "bedrooms": 2,
+        "price_month": 1600,
+        "url": "https://speedhome.com/details/kenwingston-platz-setapak-wrbryvsn",
+        "url_slug": "kenwingston-platz-setapak-wrbryvsn",
+        "lat": 3.2010844645155743,
+        "lng": 101.70337771760785
+      },
+      {
+        "title": "The ERA, Segambut",
+        "sqft": 646,
+        "bedrooms": 1,
+        "price_month": 2100,
+        "url": "https://speedhome.com/details/the-era-segambut-ixqdfozo",
+        "url_slug": "the-era-segambut-ixqdfozo",
+        "lat": 3.1830118851224687,
+        "lng": 101.67432273164533
+      },
+      {
+        "title": "Boulevard Service Apartment",
+        "sqft": 1019,
+        "bedrooms": 3,
+        "price_month": 1600,
+        "url": "https://speedhome.com/details/boulevard-service-apartment-qdrrxywf",
+        "url_slug": "boulevard-service-apartment-qdrrxywf",
+        "lat": 3.2001273,
+        "lng": 101.6713918
+      },
+      {
+        "title": "Savio Riana Dutamas",
+        "sqft": 845,
+        "bedrooms": 2,
+        "price_month": 2400,
+        "url": "https://speedhome.com/details/savio-riana-dutamas-jvssagua",
+        "url_slug": "savio-riana-dutamas-jvssagua",
+        "lat": 3.1854116383,
+        "lng": 101.6672234233
+      },
+      {
+        "title": "PPA1M Metropolitan Kepong, Kuala Lumpur",
+        "sqft": 1200,
+        "bedrooms": 4,
+        "price_month": 1850,
+        "url": "https://speedhome.com/details/ppa1m-metropolitan-kepong-kuala-lumpur-awwldemn",
+        "url_slug": "ppa1m-metropolitan-kepong-kuala-lumpur-awwldemn",
+        "lat": 3.2280228,
+        "lng": 101.6528593
+      },
+      {
+        "title": "Royal Domain Condominium, Sri Putramas 2",
+        "sqft": 1300,
+        "bedrooms": 3,
+        "price_month": 1750,
+        "url": "https://speedhome.com/details/royal-domain-condominium-sri-putramas-2-bhbfrrbv",
+        "url_slug": "royal-domain-condominium-sri-putramas-2-bhbfrrbv",
+        "lat": 3.180318,
+        "lng": 101.674337
+      },
+      {
+        "title": "1 Sentul Condominium, Sentul",
+        "sqft": 1080,
+        "bedrooms": 3,
+        "price_month": 1750,
+        "url": "https://speedhome.com/details/1-sentul-condominium-sentul-dqbgugut",
+        "url_slug": "1-sentul-condominium-sentul-dqbgugut",
+        "lat": 3.199879009784324,
+        "lng": 101.69003026864856
+      },
+      {
+        "title": "Residensi Platinum Teratai, Kuala Lumpur",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 620,
+        "url": "https://speedhome.com/details/residensi-platinum-teratai-kuala-lumpur-mbixgfcd",
+        "url_slug": "residensi-platinum-teratai-kuala-lumpur-mbixgfcd",
+        "lat": 3.2011072,
+        "lng": 101.7091767
+      },
+      {
+        "title": "EcoSky, Jalan Ipoh",
+        "sqft": 1109,
+        "bedrooms": 3,
+        "price_month": 2300,
+        "url": "https://speedhome.com/details/ecosky-jalan-ipoh-ycltulhj",
+        "url_slug": "ecosky-jalan-ipoh-ycltulhj",
+        "lat": 3.2191391518,
+        "lng": 101.6709566116
+      },
+      {
+        "title": "Residensi Kepongmas 2",
+        "sqft": 800,
+        "bedrooms": 3,
+        "price_month": 1500,
+        "url": "https://speedhome.com/details/residensi-kepongmas-2-mznmvean",
+        "url_slug": "residensi-kepongmas-2-mznmvean",
+        "lat": 3.2197685,
+        "lng": 101.6418028
+      },
+      {
+        "title": "Rica Residence, Sentul",
+        "sqft": null,
+        "bedrooms": "MEDIUM",
+        "price_month": 900,
+        "url": "https://speedhome.com/details/rica-residence-sentul-peieanbb",
+        "url_slug": "rica-residence-sentul-peieanbb",
+        "lat": 3.1781599323,
+        "lng": 101.6878652573
+      },
+      {
+        "title": "Setia Sky Residences, KLCC",
+        "sqft": 1055,
+        "bedrooms": 2,
+        "price_month": 2900,
+        "url": "https://speedhome.com/details/setia-sky-residences-klcc-jtlpfxeg",
+        "url_slug": "setia-sky-residences-klcc-jtlpfxeg",
+        "lat": 3.1684,
+        "lng": 101.71
+      }
+    ],
+    {
+      "method": "geo_radius_fallback_median",
+      "area_name": "Segambut",
+      "radius_km": 12.0,
+      "target_lat": 3.195986811229107,
+      "target_lng": 101.674337,
+      "geocode_succeeded": false,
+      "total_before": 116,
+      "total_after": 36,
+      "dropped_no_coords": 80,
+      "dropped_out_of_radius": 0
+    }
+  ]
+}
