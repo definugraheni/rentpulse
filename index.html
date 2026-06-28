@@ -1042,7 +1042,7 @@
             </div>
             <div class="masthead-right">
                 <div class="meta-date" id="dateStamp">—</div>
-                <div class="meta-notice">Data publik · robots.txt-compliant · live scraping</div>
+                <div class="meta-notice">Data publik · robots.txt-compliant · Scraping</div>
             </div>
         </div>
 
@@ -1350,7 +1350,7 @@
             const goBtn = document.getElementById('goBtn');
             if (!slug) { statusLine.textContent = 'Masukkan nama area atau URL SPEEDHOME yang valid.'; return; }
             goBtn.disabled = true;
-            statusLine.innerHTML = `<span class="spinner"></span>Menarik data live untuk "<b>${raw}</b>" lewat API scraper (10–30 detik)...`;
+            statusLine.innerHTML = `<span class="spinner"></span>Menarik data untuk "<b>${raw}</b>" lewat API scraper (10–30 detik)...`;
             try {
                 const res = await fetch(`${API_BASE}/api/scrape?slug=${encodeURIComponent(slug)}&pages=2`);
                 if (!res.ok) {
